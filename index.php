@@ -2,7 +2,7 @@
 
     include './config.php';
 
-    $pokemon = 'lopunny';
+    $pokemon = 'pikachu';
     $generation = 7;
     $tier = 'ou';
     
@@ -231,7 +231,13 @@
             <?php endif ;?>
 
         <?php endforeach ;?>
-    
+
+        <?php
+           echo '<pre>';
+           print_r($smogonData->spreads);
+           echo '</pre>';
+        ?>
+
     </div>
 
 </body>
