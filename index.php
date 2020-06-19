@@ -2,9 +2,9 @@
 
     include './config.php';
 
-    $pokemon = 'lucario';
+    $pokemon = 'lopunny';
     $generation = 7;
-    $tier = 'AG';
+    $tier = 'ou';
     
     
     $pokeapi = 'https://pokeapi.co/api/v2/pokemon/'.$pokemon.'';
@@ -63,10 +63,8 @@
             <h4>Use : <?php echo $_ability ;?></h4>
             <h4>Ability : <?php echo $key ;?></h4>
 
-            <br>
-
         <?php endforeach ;?>
-
+        <br>
     </div>
 
     <div class="part1">
@@ -75,16 +73,12 @@
 
             <h4><?php echo ucfirst($_stat->stat->name) . ' ' . $_stat->base_stat ;?></h4>
 
-            <br>
-
         <?php endforeach ;?>
         <img src="<?php echo $pokeIco ;?>" alt="">
 
         <?php foreach($smogonData->moves as $key => $_move): ?>
 
             <h4><?php echo $key . ' : ' . $_move ;?></h4>
-
-            <br>
 
         <?php endforeach ;?>
     </div>
@@ -224,8 +218,6 @@
                         $key = $key . '--bag';
                         break;
                 }
-            ?>
-            <?php
                 $pokeapiObject = 'https://pokeapi.co/api/v2/item/'.$key.'';
                 $pokeapiDataObject = @file_get_contents($pokeapiObject);
                 $pokeapiDataObject = json_decode($pokeapiDataObject);
