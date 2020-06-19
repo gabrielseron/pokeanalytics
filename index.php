@@ -2,9 +2,9 @@
 
     include './config.php';
 
-    $pokemon = 'pikachu';
+    $pokemon = 'lucario';
     $generation = 7;
-    $tier = 'ubers';
+    $tier = 'AG';
     
     
     $pokeapi = 'https://pokeapi.co/api/v2/pokemon/'.$pokemon.'';
@@ -48,16 +48,22 @@
 
             <h4>Type: <?php echo ucfirst($_type->type->name) ;?></h4>
 
+            <br>
+
         <?php endforeach ;?>
 
         <h4>Tier : <?php echo ucFirst($tier) . ' ' . 'Gen ' . $generation ;?></h4>
         <h4>Rank : <?php echo $smogonData->rank ;?></h4>
         <h4>Percentage of use : <?php echo $smogonData->usage ;?></h4>
 
+        <br>
+
         <?php foreach($smogonData->abilities as $key => $_ability): ?>
 
-            <h4>Ability : <?php echo $_ability ;?></h4>
-            <h4>Use : <?php echo $key ;?></h4>
+            <h4>Use : <?php echo $_ability ;?></h4>
+            <h4>Ability : <?php echo $key ;?></h4>
+
+            <br>
 
         <?php endforeach ;?>
 
@@ -69,12 +75,16 @@
 
             <h4><?php echo ucfirst($_stat->stat->name) . ' ' . $_stat->base_stat ;?></h4>
 
+            <br>
+
         <?php endforeach ;?>
         <img src="<?php echo $pokeIco ;?>" alt="">
 
         <?php foreach($smogonData->moves as $key => $_move): ?>
 
             <h4><?php echo $key . ' : ' . $_move ;?></h4>
+
+            <br>
 
         <?php endforeach ;?>
     </div>
@@ -85,11 +95,135 @@
 
             <h4><?php echo $key . ' : '.  $_item ;?></h4>
 
-            
 
             <?php 
                 $key = preg_replace('~[^\pL\d]+~u', '-', $key);
                 $key = strtolower($key);
+
+                switch ($key) {
+                    case 'buginium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'darkinium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'dragonium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'electrium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'fairium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'fightinium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'firium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'flyinium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'ghostium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'grassium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'groundium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'icium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'normalium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'poisonium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'psychium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'rockium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'steelium-z':
+                        $key = $key . '--bag';
+                        break;
+                    case 'waterium-z':
+                        $key = $key . '--bag';
+                        break;    
+
+                    case 'aloraichium-z':
+                        $key = $key . '--bag';
+                        break;    
+
+                    case 'decidium-z':
+                        $key = $key . '--bag';
+                        break;
+
+                    case 'eevium-z':
+                        $key = $key . '--bag';
+                        break;
+
+                    case 'incinium-z':
+                        $key = $key . '--bag';
+                        break;    
+
+                    case 'kommonium-z':
+                        $key = $key . '--bag';
+                        break;
+                        
+                    case 'lunalium-z':
+                        $key = $key . '--bag';
+                        break;
+
+                    case 'lycanium-z':
+                        $key = $key . '--bag';
+                        break;    
+
+                    case 'marshadium-z':
+                        $key = $key . '--bag';
+                        break;
+                        
+                    case 'mewnium-z':
+                        $key = $key . '--bag';
+                        break;
+
+                    case 'mimikium-z':
+                        $key = $key . '--bag';
+                        break;    
+
+                    case 'pikanium-z':
+                        $key = $key . '--bag';
+                        break;
+
+                    case 'pikashunium-z':
+                        $key = $key . '--bag';
+                        break;
+
+                    case 'primarium-z':
+                        $key = $key . '--bag';
+                        break;    
+
+                    case 'snorlium-z':
+                        $key = $key . '--bag';
+                        break;
+                        
+                    case 'solganium-z':
+                        $key = $key . '--bag';
+                        break;
+
+                    case 'tapunium-z':
+                        $key = $key . '--bag';
+                        break;    
+
+                    case 'ultranecrozium-z':
+                        $key = $key . '--bag';
+                        break;
+                }
             ?>
             <?php
                 $pokeapiObject = 'https://pokeapi.co/api/v2/item/'.$key.'';
