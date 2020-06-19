@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+.nav {
+  margin-top: 4%;
+}
+
+#nav {
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 5;
+}
+nav {
+  margin-top: 4%;
+}
+
+.logo_nav {
+  margin-top: -2%;
+  width: 300px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  width: 1%;
+  margin-left: 10%;
+  margin-top: 3.7%;
+  transform: rotate(-90deg);
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search {
+    width: 250px;
+    height: 20px;
+    transform: skew(30deg) translateX(-100px);
+    background: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 6px;
+  }
+
+.menu.open .menu-item:nth-child(2) {
+  transform: translateX(calc(100vw / 10 * 1));
+}
+
+.menu.open .menu-item:nth-child(3) {
+  transform: translateX(calc(100vw / 10 * 2));
+}
+
+.menu.open .menu-item:nth-child(4) {
+  transform: translateX(calc(100vw / 10 * 3));
+}
+
+.menu.open .menu-item:nth-child(4) {
+  transform: translateX(calc(100vw / 10 * 3));
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.hero_who {
+  width: 60%;
+  z-index: -10;
+}
+
+.sub_hero {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15%;
+}
+
+.txt1 {
+  width: 60%;
+  font-size: 1.2rem;
+  margin-top: 15%;
+  text-align: right;
+  min-width: 40%;
+  margin-right: -10%;
+  z-index: 2;
+}
+
+.plus {
+  padding: 10%;
+}
+
+.safety_run {
+  width: 40%;
+  margin-top: -10%;
+}
+
+#footer {
+    bottom: 20px;
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 5;
+  }
+
+.footer {
+  margin: 2%;
+  background: #fff;
+}
+
+.footer_brand {
+  margin-top: -2.5%;
+  margin-left: 5%;
+  background: #fff;
+}
+
+.footer_logo {
+  width: 3%;
+  min-width: 3%;
+  background: #fff;
+}
+
+.footer_contact {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -1.5%;
+  background: #fff;
+}
+
+div.container img {
+  width: 307px;
+  height: 454px;
+}
+
+.lou,
+.affiches {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.yacine {
+  margin-top: 50px;
+  padding-left: 500px;
+}
+
+.fp-tooltip.fp-right {
+  color: black !important;
+  font-weight: bold;
+}
+
+.mainShop{
+text-align: center;
+}
+
+.wipPicture{
+width: 15%;
+height: inherit;
+}
