@@ -1,9 +1,23 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   color: #444;
+  margin: 0;
+  padding: 0;
+  
+  width: 100%;
+  height: 100vh;
+ 
+  background: #08B57B;
+  background-image: linear-gradient(rgba(0, 132, 99, .7) .3em, transparent .3em), linear-gradient(90deg, rgba(0, 132, 99, .7) .3em, transparent .3em);
+  background-size: 4em 4em;
+  animation:100s scroll infinite linear;
+}
+
+@keyframes scroll{
+  100%{
+    background-position:-3000px 0px;
+  }
 }
 
 a {

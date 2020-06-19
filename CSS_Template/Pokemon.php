@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <title>SAFETY</title>
+  <title>Poké Pro Strat</title>
   <meta name="description" content="Description de ma page pour les moteurs de recherche">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
