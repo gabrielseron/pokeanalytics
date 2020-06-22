@@ -232,11 +232,20 @@
 
         <?php endforeach ;?>
 
-        <?php
-           echo '<pre>';
-           print_r($smogonData->spreads);
-           echo '</pre>';
-        ?>
+
+        <?php foreach($smogonData->spreads as $_nature => $_spreads): ?>
+
+            <?php $array = json_decode(json_encode($_spreads),true); ;?>
+
+            <?php if ($_nature!="Other"): ?>
+                <?php foreach($array as $_spread => $_percent): ?>
+                    <h3><?php echo $_nature ;?></h3>
+                    <h3><?php echo $_spread ;?></h3>
+                    <h3><?php echo $_percent ;?></h3>
+                <?php endforeach ;?>
+            <?php endif ;?>
+
+        <?php endforeach ;?>
 
     </div>
 
