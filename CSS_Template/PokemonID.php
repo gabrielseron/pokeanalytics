@@ -29,12 +29,8 @@ include './home.php'
 
       <div class="parallelogramReverseInvisible"></div>
 
-      <div class="pokemonName">Togekiss</div>
-      <div class="pokemonCategory">Uber</div>
-      <div class="pokemonType1">Fairy</div>
-      <div class="pokemonType2">Flying</div>
-      <div class="pokemonRank">N°1</div>
-      <div class="pokemonPercentage">41.22%</div>
-
     </div>
+
+    <div class="pokemonStats">FDP</div>
+    <div class="pokemonMoves"></div>
 </main>

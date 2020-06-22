@@ -350,7 +350,22 @@ input[type=submit] {
   border-right: 93px solid transparent;
 }
 
-.pokemonName
+.pokemonStats
 {
   position: absolute;
+  width: 640px;
+  height: 491px;
+  top: 239px;
+  left: 58px;
+  background: #393939;
+}
+
+.pokemonMoves
+{
+  position: absolute;
+  width: 530px;
+  height: 491px;
+  top: 239px;
+  left: 57%;
+  background: #393939;
 }
