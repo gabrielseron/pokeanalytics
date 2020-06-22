@@ -1,6 +1,6 @@
 <?php 
 
-include './Pokemon.php'
+include './home.php'
 
 ?>
 
