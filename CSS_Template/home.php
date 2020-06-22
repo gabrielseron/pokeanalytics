@@ -12,43 +12,49 @@
   <div id="nav">
   <nav>
     <ul class="menu open">
-      <li class="logo_nav"><img src="images/logo.png" class="logo_nav my-button" alt=""></li>
-      <li class="search"><a href="gallerie.html">Search</a></li>
+      <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
+      <li class="searchInput">
+        <form autocomplete="off" action="/action_page.php">
+          <div class="autocomplete search" style="width:300px;">
+            <input id="myInput" type="text" name="myCountry" placeholder="Search">
+            <div class="tails"></div>
+            <div class="tail1"></div>
+            <div class="tail2"></div>
+            <div class="tail3"></div>
+          </div>
+          <input type="submit">
+        </form>
+      </li>
     </ul>
   </nav>
   </div>
     <div id="footer">
     <footer class="footer" >
-      <hr>
-      <img src="images/logo_rempli.svg" class="footer_logo" alt="">
-      <div class="footer_brand">Pokémon Pro Stats</div>
+      <img src="./images/logo.png" class="footer_logo" alt="">
       <span class="footer_contact">
-        <a href="mailto:contac@safetybear.co">Contact Us</a>
+        <a href="mailto:contac@safetybear.co">About</a>
       </span>
     </footer>
     </div>
   <div id="fullPage">
-    <div class="container lou, section">
-      <img src="images/lou1.jpg" alt="">
-      <img src="images/lou2.jpg" alt="">
+    <div class="container home, section">
+
     </div>
-    <div class="container yacine, section">
-      <img src="images/yacine2.jpg" alt="">
-      <img src="images/yacine1.png" alt="">
+    <div class="container about, section">
+
     </div>
-    <div class="container affiches, section">
-      <img src="images/affiche1.png" alt="">
-      <img src="images/affiche2.png" alt="">
+    <div class="container contact, section">
+
     </div>
   </div>
-  <script src="scripts/main.js"></script>
+  <script src="./scripts/home.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>"
 
   <script>
     new fullpage('#fullPage', {
       autoScrolling: true,
       navigation: true,
-      navigationTooltips: ["Test", "Test2", "Test3"],
+      navigationTooltips: ["Home", "Top 10", "About"],
       showActiveTooltip: true
     })
   </script>
