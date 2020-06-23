@@ -2,7 +2,7 @@
 
     include './config.php';
     include_once './array.php';
-    $pokemon = 'pichu';
+    $pokemon = 'pikachu';
     $generation = 7;
     $tier = 'ou';
     
