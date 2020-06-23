@@ -58,8 +58,20 @@
         <li class="value"><p>10%</p></li>
       </ul>
     </div>
-
   </nav>
+  <main>
+    <div class="baseStats">
+      <div class="baseStatsTitle">
+        <h2>Base stats</h2>
+      </div>
+    </div>
+    <div class="movesChoices">
+      <div class="movesTitle">
+        <h2>Moves</h2>
+      </div>
+    </div>
+  </main>
+ 
 </div>
   <div id="footer">
   <footer class="footer" >
