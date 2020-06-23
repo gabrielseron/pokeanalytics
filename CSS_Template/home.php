@@ -45,7 +45,12 @@
 
     </div>
     <div class="container contact, section">
-
+      <div class="composant">
+        <div class="text_container">
+          <p class="text">About</p>
+        </div>
+        <img src="images/case.svg" alt="style" class="image">
+      </div>
     </div>
   </div>
   <script src="./scripts/home.js"></script>
