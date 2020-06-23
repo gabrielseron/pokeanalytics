@@ -14,6 +14,10 @@ body {
   animation:100s scroll infinite linear;
 }
 
+.hidden
+{
+  display: none;
+}
 
 @font-face {
   font-family: 'CorporativeBlack';
@@ -52,11 +56,6 @@ body {
 a {
   text-decoration: none;
   color: #444;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
 }
 
 li {
@@ -151,16 +150,26 @@ nav {
   padding-right: 50px;
 }
 
-div.container img {
-  width: 307px;
-  height: 454px;
-}
 
 .fp-tooltip.fp-right {
-  color: black !important;
+  color: white !important;
   font-family: "CorporativeBlack" !important;
 
 }
+
+    #fp-nav ul li a.active span {
+      background: #528418 !important;
+      border-color: #94EF18;
+      border-width: 5px;
+    }
+
+    #fp-nav ul li a span {
+      background: #94EF18 !important;
+    }
+
+    .fp-slidesNav ul li:hover a span {
+      background: #94EF18 !important;
+    } 
 
 * { box-sizing: border-box; }
 .autocomplete {
@@ -234,8 +243,7 @@ button span
 }
 .autocomplete-active {
   /*when navigating through the items using the arrow keys:*/
-  background-color: DodgerBlue !important;
-  color: #ffffff;
+  color: rgb(90, 90, 90);
 }
 
 .tails
@@ -278,26 +286,205 @@ button span
 
 .about
 {
-
+  margin-left: 15vw;
 }
 
 .composant
 {
-  margin-top: -2vh;
+  margin-top: 10.5vh;
   position: relative;
   display: flex;
   justify-content: space-around;
 }
 
-.textContainer
+.textContainer, .textContainer2
 {
-  width: 50vh;
-  height: 25.5vw;
-  background-color: rgba(49, 49, 49, 1);
+  width: 40vw;
+  height: 50vh;
+  background: rgba(49, 49, 49, 1);
+  border-style: solid;
+  border-color: rgba(24, 24, 24, 1);
+  border-width: 6px;
+  text-align: center;
+}
+
+.windowTailStart
+{
+  position: absolute;
+  margin-top: -250px;
+  margin-left: -6px;;
+  width: 400px;
+  height: 44px;
+  background: rgba(24, 24, 24, 1);
+  z-index: 5;
+  text-align: left;
+}
+
+.welcome
+{
+  position: absolute;
+  margin-top: -245px;
+  margin-left: 10px;
+  z-index: 5;
+  color: white;
+}
+
+.windowTails
+{
+  position: absolute;
+  margin-top: -250px;
+  margin-left: 110px;;
+  width: 400px;
+  height: 44px;
+  background: rgba(24, 24, 24, 1);
+  transform: skew(30deg) translateX(-100px);
+  z-index: 4;
+}
+
+.windowTail1, .windowTail2, .windowTail3
+{
+  position: absolute;
+  margin-top: -243px;
+  margin-left: 407px;;
+  width: 25px;
+  height: 30px;
+  background: #94EF18;
+  border-style: solid;
+  border-color: #528418;
+  border-width: 5px;
+  transform: skew(30deg) translateX(-100px);
+  z-index: 5;
+}
+
+.windowTail2
+{
+  margin-left: 442px;
+}
+
+.windowTail3
+{
+  margin-left: 476px;
+}
+
+.randomPokemon
+{
+  position: absolute;
+  margin-top: -38px;
+  margin-left: 10px;
+  z-index: 5;
+  color: white;
+}
+
+.window2TailStart
+{
+  position: absolute;
+  margin-top: -45px;
+  margin-left: -6px;;
+  width: 400px;
+  height: 44px;
+  background: rgba(24, 24, 24, 1);
+  z-index: 5;
+  text-align: left;
+}
+
+.window2Tails
+{
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 110px;
+  width: 400px;
+  height: 44px;
+  background: rgba(24, 24, 24, 1);
+  transform: skew(30deg) translateX(-100px);
+  z-index: 4;
+}
+
+.window2Tail1, .window2Tail2, .window2Tail3
+{
+  position: absolute;
+  margin-top: -38px;
+  margin-left: 407px;;
+  width: 25px;
+  height: 30px;
+  background: #94EF18;
+  border-style: solid;
+  border-color: #528418;
+  border-width: 5px;
+  transform: skew(30deg) translateX(-100px);
+  z-index: 5;
+}
+
+.window2Tail2
+{
+  margin-left: 442px;;
+}
+
+.window2Tail3
+{
+  margin-left: 476px;
+}
+
+
+.homeText{
+  color : white;
+  font-family: "CorporativeBold";
+  font-size: 25px;
+  stroke: 2px black;
 }
 
 .text{
-  margin-top: 25%;
   color : white;
-  padding-left: 1%;
+}
+
+.arrow-circle-down {
+  position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+  margin-left: 49vw;
+  margin-top: 4vh;
+  fill: #528418;
+}
+
+.bounce {
+	        animation: bounce 3s;
+	        animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-20px);
+	}
+	60% {
+		-webkit-transform: translateY(-12px);
+		        transform: translateY(-12px);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-20px);
+	}
+	60% {
+		-webkit-transform: translateY(-12px);
+		        transform: translateY(-12px);
+	}
 }

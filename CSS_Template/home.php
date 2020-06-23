@@ -33,23 +33,45 @@
     <footer class="footer" >
       <img src="./images/logo.png" class="footer_logo" alt="">
       <span class="footer_contact">
-        <a href="http://localhost/pokeanalytics/CSS_Template/home.php#About">About</a>
+        <a href="#sectionAbout">About</a>
       </span>
     </footer>
     </div>
   <div id="fullPage">
     <div class="container home, section">
-
+    <div class="composant">
+        <div class="textContainer">
+        <img class="logo" src="./images/logo.png" class="footer_logo" alt="">
+        <p class="homeText">The N°1 reference for Pokémon statistics</p>
+        <div class="windowTails"></div>
+            <div class="windowTailStart"></div>
+            <h2 class="welcome">Welcome</h2>
+            <div class="windowTail1"></div>
+            <div class="windowTail2"></div>
+            <div class="windowTail3"></div>
+        </div>
+        <div class="textContainer2">
+          <div class="window2Tails"></div>
+            <div class="window2TailStart"></div>
+            <h2 class="randomPokemon">Random Pokémon</h2>
+            <div class="window2Tail1"></div>
+            <div class="window2Tail2"></div>
+            <div class="window2Tail3"></div>
+        </div>
+        </div>
+      </div>
+      <svg class="arrow-circle-down bounce" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1412 897q0-27-18-45l-91-91q-18-18-45-18t-45 18l-189 189v-502q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v502l-189-189q-19-19-45-19t-45 19l-91 91q-18 18-18 45t18 45l362 362 91 91q18 18 45 18t45-18l91-91 362-362q18-18 18-45zm252-1q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" fill="#94EF18"></path></svg>
     </div>
     <div class="container top, section">
 
     </div>
-    <div class="container about, section">
+    <div class="container about, section"  id="sectionAbout">
       <div class="composant">
         <div class="textContainer">
-          <p class="text">About</p>
+          <p class="text">Disclaimer</p>
         </div>
-        <div class="textContainer">
+        <div class="textContainer2">
           <p class="text">About</p>
         </div>
       </div>
@@ -63,7 +85,7 @@
       autoScrolling: true,
       navigation: true,
       navigationTooltips: ["Home", "Top 10", "About"],
-      showActiveTooltip: true
+      showActiveTooltip: false
     })
   </script>
 
