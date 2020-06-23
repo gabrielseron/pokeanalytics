@@ -265,3 +265,27 @@ button span
   margin-left: 476px;
 }
 
+/* about */
+
+.composant{
+  margin-left: 50%;
+  position: relative;
+}
+
+.text-container{
+
+}
+
+.text{
+  margin-top: 25%;
+  color : white;
+  padding-left: 1%;
+}
+
+.image{
+  position: absolute;
+  margin-top: -25%;
+  height: ;
+  width: ;
+  z-index: -1;
+}
