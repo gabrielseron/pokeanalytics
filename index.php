@@ -1,8 +1,8 @@
 <?php
 
     include './config.php';
-
-    $pokemon = 'pikachu';
+    include_once './array.php';
+    $pokemon = 'pichu';
     $generation = 7;
     $tier = 'ou';
     
@@ -94,7 +94,8 @@
                 $key = preg_replace('~[^\pL\d]+~u', '-', $key);
                 $key = strtolower($key);
 
-                switch ($key) {
+                switch ($key) 
+                {
                     case 'buginium-z':
                         $key = $key . '--bag';
                         break;
