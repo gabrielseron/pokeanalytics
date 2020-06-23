@@ -104,7 +104,7 @@ nav {
 
 .search {
     position: absolute;
-    height: 53px;
+    height: 54px;
     width: 285px;
     transform: skew(30deg) translateX(-495px) translateY(-45px);
     background: rgba(49, 49, 49, 1);
@@ -125,6 +125,8 @@ nav {
     background-image: linear-gradient(rgba(24, 24, 24, .7) .3em, transparent .3em), linear-gradient(90deg,rgba(24, 24, 24, .7) .3em, transparent .3em);
     background-size: 5vh 5vh;
     animation:100s scroll infinite linear;
+    font-family: "CorporativeBold";
+    font-size: 18px;
   }
 
 .footer {
@@ -140,7 +142,12 @@ nav {
 .footer_contact {
   display: flex;
   justify-content: flex-end;
-  margin-top: -1.5%;
+  margin-top: -3.5vh;
+}
+
+.footer_contact a{
+  color: #fff;
+  padding-right: 50px;
 }
 
 div.container img {
@@ -150,7 +157,8 @@ div.container img {
 
 .fp-tooltip.fp-right {
   color: black !important;
-  font-weight: bold;
+  font-family: "CorporativeBlack" !important;
+
 }
 
 * { box-sizing: border-box; }
@@ -196,7 +204,7 @@ button span
 {
   transform: skew(-30deg);
   display: block;
-  font-family: "CorporativeMedium";
+  font-family: "CorporativeBold";
   font-size: 18px;
 }
 
@@ -235,7 +243,7 @@ button span
   margin-top: -33px;
   margin-left: 310px;;
   width: 200px;
-  height: 53px;
+  height: 54px;
   background: rgba(24, 24, 24, 1);
   transform: skew(30deg) translateX(-100px);
   z-index: 5;

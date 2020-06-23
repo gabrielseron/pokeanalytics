@@ -16,7 +16,7 @@
       <li class="searchInput">
         <form autocomplete="off" action="/action_page.php">
           <div class="autocomplete">
-            <input id="myInput" type="text" name="myCountry" placeholder="Search">
+            <input id="myInput" type="text" name="pokemon" placeholder="Search">
             <div class="tails"></div>
             <div class="tail1"></div>
             <div class="tail2"></div>
