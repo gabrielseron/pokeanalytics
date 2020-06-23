@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "CorporativeMedium";
   font-size: 16px;
   color: #444;
   margin: 0;
@@ -10,9 +10,38 @@ body {
  
   background: #08B57B;
   background-image: linear-gradient(rgba(0, 132, 99, .7) .3em, transparent .3em), linear-gradient(90deg, rgba(0, 132, 99, .7) .3em, transparent .3em);
-  background-size: 4em 4em;
+  background-size: 5vh 5vh;
   animation:100s scroll infinite linear;
 }
+
+@font-face {
+  font-family: 'CorporativeBlack';
+  src:
+          url('../fonts/CorporativeSansAltBlack.otf')
+          format('opentype');
+}
+
+@font-face {
+  font-family: 'CorporativeBold';
+  src:
+          url('../fonts/CorporativeSansAltBold.otf')
+          format('opentype');
+}
+
+@font-face {
+  font-family: 'CorporativeRegular';
+  src:
+          url('../fonts/CorporativeSansAltRegular.otf')
+          format('opentype');
+}
+
+@font-face {
+  font-family: 'CorporativeMedium';
+  src:
+          url('../fonts/CorporativeSansAltMedium.otf')
+          format('opentype');
+}
+
 
 @keyframes scroll{
   100%{

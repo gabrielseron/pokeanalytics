@@ -12,7 +12,7 @@
 <body class="container">
   <div id="nav">
   <nav>
-    <ul class="menu open">
+    <ul class="menu">
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
         <form autocomplete="off" action="../index.php">
