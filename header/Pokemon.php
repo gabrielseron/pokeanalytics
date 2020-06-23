@@ -73,11 +73,17 @@
         <div class="baseStats">
           <div class="baseStatsTitle">
             <h2>Base stats</h2>
+            <div class="cubeStat1"></div>
+            <div class="cubeStat2"></div>
+            <div class="cubeStat3"></div>
           </div>
         </div>
         <div class="movesChoices">
           <div class="movesTitle">
             <h2>Moves</h2>
+            <div class="cubeMove1"></div>
+            <div class="cubeMove2"></div>
+            <div class="cubeMove3"></div>
           </div>
         </div>
       </main>
