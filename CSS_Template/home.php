@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./styles/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
 </head>
 <body class="container">
   <div id="nav">
@@ -14,9 +15,9 @@
     <ul class="menu open">
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
-        <form autocomplete="off" action="/action_page.php">
+        <form autocomplete="off" action="../index.php">
           <div class="autocomplete">
-            <input id="myInput" type="text" name="pokemon" placeholder="Search">
+            <input id="myInput" type="text" name="pokemon" placeholder="Search" required>
             <div class="tails"></div>
             <div class="tail1"></div>
             <div class="tail2"></div>

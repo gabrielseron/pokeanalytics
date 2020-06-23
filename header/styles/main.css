@@ -588,3 +588,81 @@ height: inherit;
 .menutitle .titleuber #h2 {
   color: white;
 }
+
+.cubeStat1{
+  position: absolute;
+  width: 18px;
+  height: 29px;
+  background-color: #94EF18;
+  transform: skew(42deg);
+  border-style: solid;
+  border-color: #528418;
+  border-width: 6px;
+  top: 25px;
+  left: 86%;
+}
+
+.cubeStat2{
+  position: absolute;
+  width: 18px;
+  height: 29px;
+  background-color: #94EF18;
+  transform: skew(42deg);
+  border-style: solid;
+  border-color: #528418;
+  border-width: 6px;
+  top: 25px;
+  left: 92%;
+}
+
+.cubeStat3{
+  position: absolute;
+  width: 18px;
+  height: 29px;
+  background-color: #94EF18;
+  transform: skew(42deg);
+  border-style: solid;
+  border-color: #528418;
+  border-width: 6px;
+  top: 25px;
+  left: 98%;
+}
+
+.cubeMove1 {
+  position: absolute;
+  width: 18px;
+  height: 29px;
+  background-color: #94EF18;
+  transform: skew(42deg);
+  border-style: solid;
+  border-color: #528418;
+  border-width: 6px;
+  top: 24px;
+  left: 438px;
+}
+
+.cubeMove2 {
+  position: absolute;
+  width: 18px;
+  height: 29px;
+  background-color: #94EF18;
+  transform: skew(42deg);
+  border-style: solid;
+  border-color: #528418;
+  border-width: 6px;
+  top: 24px;
+  left: 468px;
+}
+
+.cubeMove3 {
+  position: absolute;
+  width: 18px;
+  height: 29px;
+  background-color: #94EF18;
+  transform: skew(42deg);
+  border-style: solid;
+  border-color: #528418;
+  border-width: 6px;
+  top: 24px;
+  left: 498px;
+}
