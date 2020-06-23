@@ -350,7 +350,8 @@ li {
   transform: translateY(2px);
 }
 .ribbonthree{
-  transform: translateY(-5px);
+  transform: translateY(-5
+  x);
 }
 .value {
     width: 200px;
@@ -529,4 +530,61 @@ text-align: center;
 .wipPicture{
 width: 15%;
 height: inherit;
+}
+/* Main  */
+.baseStats {
+  position: absolute;
+  top: 165%;
+  left: 32px;
+  width: 956.87px;
+  height: 495px;
+  background: #393939;
+}
+
+.baseStatsTitle {
+  position: absolute;
+  width: 510px;
+  height: 21.74px;
+  top: -68px;
+  left: 170.6px;
+  transform: translateX(-31%);
+  border-bottom: 46px solid #181818;
+  border-right: 42px solid transparent;
+}
+
+.baseStatsTitle h2 {
+  color: white;
+  text-align: left;
+  margin-left: 11px;
+  margin-top: 31px;
+}
+
+.movesChoices {
+  position: absolute;
+  top: 165%;
+  left: 60%;
+  width: 650px;
+  height: 495px;
+  background: #393939;
+}
+
+.movesTitle {
+  position: absolute;
+  width: 510px;
+  height: 21.74px;
+  top: -68px;
+  left: 170.6px;
+  transform: translateX(-31%);
+  border-bottom: 46px solid #181818;
+  border-right: 42px solid transparent;
+}
+
+.movesTitle h2 {
+  color: white;
+  text-align: left;
+  margin-left: 11px;
+  margin-top: 31px;
+}
+.menutitle .titleuber #h2 {
+  color: white;
 }
