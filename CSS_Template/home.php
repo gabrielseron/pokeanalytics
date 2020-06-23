@@ -5,7 +5,7 @@
   <title>Poké Pro Strat</title>
   <meta name="description" content="Description de ma page pour les moteurs de recherche">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
 </head>
 <body class="container">
@@ -15,15 +15,16 @@
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
         <form autocomplete="off" action="/action_page.php">
-          <div class="autocomplete search" style="width:300px;">
+          <div class="autocomplete">
             <input id="myInput" type="text" name="myCountry" placeholder="Search">
             <div class="tails"></div>
             <div class="tail1"></div>
             <div class="tail2"></div>
             <div class="tail3"></div>
           </div>
-          <input type="submit">
+          <button type="submit"><span>Valider</span></button>
         </form>
+        <div class="search"><div>
       </li>
     </ul>
   </nav>
@@ -32,7 +33,7 @@
     <footer class="footer" >
       <img src="./images/logo.png" class="footer_logo" alt="">
       <span class="footer_contact">
-        <a href="mailto:contac@safetybear.co">About</a>
+        <a href="">About</a>
       </span>
     </footer>
     </div>
