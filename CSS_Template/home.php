@@ -14,9 +14,9 @@
     <ul class="menu open">
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
-        <form autocomplete="off" action="/action_page.php">
+        <form autocomplete="off" action="../index.php">
           <div class="autocomplete">
-            <input id="myInput" type="text" name="pokemon" placeholder="Search">
+            <input id="myInput" type="text" name="pokemon" placeholder="Search" required>
             <div class="tails"></div>
             <div class="tail1"></div>
             <div class="tail2"></div>
