@@ -74,6 +74,7 @@ li {
   animation:100s scroll infinite linear;
   vertical-align: middle;
 }
+
 nav {
   margin-top: -2vh;
   vertical-align: middle;
@@ -277,23 +278,18 @@ button span
 
 .composant{
   margin-left: 50%;
+  margin-top: -2vh;
   position: relative;
 }
 
-.text-container{
-
+.textContainer{
+  width: 50vh;
+  height: 25.5vw;
+  background-color: rgba(49, 49, 49, 1);
 }
 
 .text{
   margin-top: 25%;
   color : white;
   padding-left: 1%;
-}
-
-.image{
-  position: absolute;
-  margin-top: -25%;
-  height: ;
-  width: ;
-  z-index: -1;
 }

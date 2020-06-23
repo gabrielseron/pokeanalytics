@@ -33,7 +33,7 @@
     <footer class="footer" >
       <img src="./images/logo.png" class="footer_logo" alt="">
       <span class="footer_contact">
-        <a href="">About</a>
+        <a href="http://localhost/pokeanalytics/CSS_Template/home.php#About">About</a>
       </span>
     </footer>
     </div>
@@ -46,10 +46,10 @@
     </div>
     <div class="container contact, section">
       <div class="composant">
-        <div class="text_container">
+        <div class="textContainer">
           <p class="text">About</p>
         </div>
-        <img src="images/case.svg" alt="style" class="image">
+
       </div>
     </div>
   </div>
