@@ -276,13 +276,21 @@ button span
 
 /* about */
 
-.composant{
-  margin-left: 50%;
-  margin-top: -2vh;
-  position: relative;
+.about
+{
+
 }
 
-.textContainer{
+.composant
+{
+  margin-top: -2vh;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.textContainer
+{
   width: 50vh;
   height: 25.5vw;
   background-color: rgba(49, 49, 49, 1);

@@ -41,15 +41,17 @@
     <div class="container home, section">
 
     </div>
-    <div class="container about, section">
+    <div class="container top, section">
 
     </div>
-    <div class="container contact, section">
+    <div class="container about, section">
       <div class="composant">
         <div class="textContainer">
           <p class="text">About</p>
         </div>
-
+        <div class="textContainer">
+          <p class="text">About</p>
+        </div>
       </div>
     </div>
   </div>
