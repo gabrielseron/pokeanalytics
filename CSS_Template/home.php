@@ -41,24 +41,23 @@
   <div id="fullPage">
     <div class="container home, section">
     <div class="composant">
-        <div class="textContainer">
+      <div class="textContainer">
         <img class="logo" src="./images/logo.png" class="footer_logo" alt="">
         <p class="homeText">The N°1 reference for Pokémon statistics</p>
         <div class="windowTails"></div>
-            <div class="windowTailStart"></div>
-            <h2 class="welcome">Welcome</h2>
-            <div class="windowTail1"></div>
-            <div class="windowTail2"></div>
-            <div class="windowTail3"></div>
-        </div>
-        <div class="textContainer2">
+        <div class="windowTailStart"></div>
+        <h2 class="welcome">Welcome</h2>
+        <div class="windowTail1"></div>
+        <div class="windowTail2"></div>
+        <div class="windowTail3"></div>
+      </div>
+      <div class="textContainer2">
           <div class="window2Tails"></div>
             <div class="window2TailStart"></div>
             <h2 class="randomPokemon">Random Pokémon</h2>
             <div class="window2Tail1"></div>
             <div class="window2Tail2"></div>
             <div class="window2Tail3"></div>
-        </div>
         </div>
       </div>
       <svg class="arrow-circle-down bounce" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
