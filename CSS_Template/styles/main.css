@@ -530,6 +530,8 @@ font-family: "CorporativeBlack" !important;
   margin-top: 0px;
   color: white;
 }
+
+
 .ribbon{
   height: 40px;
   transform:translateX(-15px);
@@ -776,4 +778,33 @@ font-family: "CorporativeBlack" !important;
   padding-left: 20px;
   padding-top: 62px;
   padding-bottom: 65px;
+}
+
+
+.infos:hover .infosTooltip {
+  display: block;
+}
+
+
+h3 {
+  transform: skew(-30deg) translateY(-20px)
+}
+
+.infosTooltip {
+  display: none;
+  background: #393939;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 6px;
+  margin-left: 28px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  width:200px;
+  height:20px;
+  transform: skew(30deg)
+}
+
+.hidden{
+  display: none;
 }

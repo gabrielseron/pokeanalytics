@@ -1,7 +1,6 @@
 <?php
 
     include './config.php';
-    include_once './array.php';
     $pokemon = $_GET["pokemon"];
     $generation = 7;
     $tier = 'ou';
@@ -28,7 +27,6 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +34,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo '[' . ucFirst($tier) . ' ' . 'Gen ' . $generation .'] ' . ucfirst($pokemon) ;?></title>
     <link rel="icon" href="<?php echo $pokeIco ;?>" type="image/favicon">
-    <!-- <link rel="stylesheet" href="./CSS_TEMPLATE/styles/home.css"> -->
+    <link rel="stylesheet" href="./CSS_Template/styles/home.css">
 </head>
 <body>
     <div class="hidden">
@@ -65,6 +63,22 @@
                 <?php $abilityCount++ ;?>
                 <h4 class="abilityUse<?php echo $abilityCount ;?>">Use : <?php echo $_ability ;?></h4>
                 <h4 class="ability<?php echo $abilityCount ;?>">Ability : <?php echo $key ;?></h4>
+                <?php
+                       $key = preg_replace('~[^\pL\d]+~u', '-', $key);
+                       $key = strtolower($key);
+                       $pokeapiAbility = 'https://pokeapi.co/api/v2/ability/'.$key.'';
+                       $pokeapiAbilityData = @file_get_contents($pokeapiAbility);
+                       $pokeapiAbilityData = json_decode($pokeapiAbilityData);
+                ?> 
+
+                <?php for ($i = 0; $i < 10; $i++): ?>
+                    <?php if ($pokeapiAbilityData->effect_entries[$i]->language->name=="en"): ?>
+
+                        <?php $enLang = $i; ;?>
+                        <h3 class="ability<?php echo $abilityCount ;?>Description"><?php echo($pokeapiAbilityData->effect_entries[$enLang]->effect); ?></h3>
+                    <?php endif ;?>
+
+                <?php endfor ;?>
 
             <?php endforeach ;?>
             <br>
