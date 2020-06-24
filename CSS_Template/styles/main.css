@@ -14,9 +14,9 @@ body {
   animation:100s scroll infinite linear;
 }
 
-/* .hidden{
+.hidden{
   display: none;
-} */
+}
 
 @font-face {
   font-family: 'CorporativeBlack';
