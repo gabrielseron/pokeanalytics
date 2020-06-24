@@ -73,9 +73,9 @@
             <div class="window2Tail1"></div>
             <div class="window2Tail2"></div>
             <div class="window2Tail3"></div>
-            <div class="top1"><img src="../header/images/togekiss1.png" alt=""><div class="top1name"><h2><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=togekiss">Togekiss</h2><h2>N°1</h2> <div class="percentage"><h2>33.33%</h2></div> </div>  </div>
-            <div class="top2"><img src="../header/images/togekiss1.png" alt=""><div class="top1name"><h2><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=tyranitar">Tyranitar</h2><h2>N°2</h2> <div class="percentage"><h2>33.33%</h2></div> </div>  </div>
-            <div class="top3"><img src="../header/images/togekiss1.png" alt=""><div class="top1name"><h2><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=dragapult">Dragapult</h2><h2>N°3</h2> <div class="percentage"><h2>33.33%</h2></div> </div>  </div>
+            <div class="top1"><img src="../header/images/togekiss1.png" alt=""><div class="top1name"><h2><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=togekiss" style="color:white;">Togekiss</h2><h2>N°1</h2> <div class="percentage"><h2>33.33%</h2></div> </div>  </div>
+            <div class="top2"><img src="../header/images/togekiss1.png" alt=""><div class="top1name"><h2><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=tyranitar" style="color:white;">Tyranitar</h2><h2>N°2</h2> <div class="percentage"><h2>33.33%</h2></div> </div>  </div>
+            <div class="top3"><img src="../header/images/togekiss1.png" alt=""><div class="top1name"><h2><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=dragapult" style="color:white;">Dragapult</h2><h2>N°3</h2> <div class="percentage"><h2>33.33%</h2></div> </div>  </div>
         </div>
         
      </div> 
