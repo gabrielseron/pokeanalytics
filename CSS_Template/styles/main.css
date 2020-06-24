@@ -75,10 +75,7 @@ li {
   z-index: 0;
 }
 
-.footer {
-margin-top: 2.5vh;
-margin-left: 2%;
-}
+
 
 .footer_logo {
 width: 8%;
@@ -152,8 +149,6 @@ font-family: "CorporativeBlack" !important;
   display: block;
   width: 100%;
   z-index: 5;
-  height: 120px;
-  transform: translateY(280px);
 }
 
 /*
@@ -259,7 +254,7 @@ font-family: "CorporativeBlack" !important;
 .rightCubenav{
   position: absolute;
   width: 10vw;
-  height: 8vh;
+  height: 9.3vh;
   right: 0;
   background-color: #FFAAFF;
   transform: skew(30deg) translateX(30px);
@@ -274,13 +269,13 @@ font-family: "CorporativeBlack" !important;
   width: 9vh;
   height: 9vh;
   right: 0;
-  margin-top: -0.2vh;
+  margin-top: 0.2vh;
 
 }
 .rightCubenavOne{
   position: absolute;
   width: 5px;
-  height: 8vh;
+  height: 9.3vh;
   right: 0;
   background-color: #FFAAFF;
   border-style: solid;
@@ -342,46 +337,59 @@ font-family: "CorporativeBlack" !important;
 */
 .cubebotnav{
   position: absolute;
-  width: 175px;
-  height: 75px;
+  width: 10vw;
+  height: 8.8vh;
+  margin-left: -2.2vw;
   background-color: #6699FF;
-  transform: translatex(-26px) translateY(120px) skew(30deg);
+  transform: skew(30deg) ;
   border-style: solid;
   border-color: black;
   border-width: 6px;
+  z-index: 4;
+  text-align: center;
 }
 .cubebotnavOne{
   position: absolute;
-  width: 50px;
-  height: 75px;
+  width: 5px;
+  height: 9.3vh;
+  margin-left: -1vw;
   background-color: #6699FF;
-  transform: translatex(0px) translateY(120px);
   border-style: solid;
   border-color: black;
   border-width: 6px;
-  border-right: #6699FF;
+  z-index: 5;
 }
-.cubebotnavTwo{
+.cubebotnavTwo
+{
   position: absolute;
-  width: 130px;
-  height: 75px;
-  transform: translateX(5px) translateY(125px);
+  width: 5vw;
+  height: 2vh;
+  bottom: -9.4vh;
+  margin-left: 8vw;
+  z-index: 5;
+  background-color: #6699FF;
 }
-.cubebotnavTwo img{
-  transform: translateX(10px) translateY(10px);
-  width: 75px;
+
+.botnav img{
+  position: absolute;
+  width: 6vw;
   height: auto;
+  margin-top: 2.5vh;
+  margin-left: 0.5vw;
+  z-index: 5;
 }
 .cubebotnavThree{
   position: absolute;
-  width: 920px;
-  height: 19px;
+  width: 55vw;
+  height: 2vh;
+  bottom: -10vh;
+  margin-left: 4vw;
   background-color: #6699FF;
-  transform: translatex(170px) translateY(176px) skew(30deg);
+  transform: skew(30deg);
   border-style: solid;
   border-color: black;
   border-width: 6px;
-  border-left: #6699FF;
+
 }
 .cubebotnavFive{
   position: absolute;
