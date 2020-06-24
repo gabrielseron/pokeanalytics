@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
   <title>Poké Pro Strat</title>
   <meta name="description" content="Description de ma page pour les moteurs de recherche">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body class="container">
   <div class="topfix">
@@ -59,7 +61,7 @@
             <ul class="menu open translatsec">
               <li class="ribbon"><img src="images/Ribbon2.png" class="ribbon" alt=""></li>
               <li class="value"><p>40%</p></li>
-            </ul> 
+            </ul>
           </div>
           <div class="ribbonthree">
             <ul class="menu open">
@@ -77,6 +79,7 @@
             <div class="cubeStat2"></div>
             <div class="cubeStat3"></div>
           </div>
+          <canvas class="statsChart"></canvas>
         </div>
         <div class="movesChoices">
           <div class="movesTitle">
@@ -85,6 +88,7 @@
             <div class="cubeMove2"></div>
             <div class="cubeMove3"></div>
           </div>
+          <canvas class="movesChart"></canvas>
         </div>
       </main>
     </div>
@@ -105,9 +109,10 @@
   <div class="container affiches, section">
   
   </div>
-</div>  
-<script src="scripts/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>"
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="./scripts/graph.js"></script>
 
   <script>
     new fullpage('#fullPage', {
