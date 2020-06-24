@@ -174,8 +174,8 @@
             <div class="evSpread2">Timid 0/0/252/4/252</div>
             <div class="evSpread3">Timid 0/0/252/4/252</div>
           </div>
-      </div>
-  </div>
+        </div>
+    </div>
   <div class="hidden allobonjour">
         <div class="navbar">
         
