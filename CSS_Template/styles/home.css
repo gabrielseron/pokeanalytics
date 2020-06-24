@@ -488,3 +488,34 @@ button span
 		        transform: translateY(-12px);
 	}
 }
+
+.top1, .top2, .top3 {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.top1, .top2, .top3, #img  {
+ width: 220px;
+ height: 145px;
+}
+
+.top1name
+{
+  position: relative;
+  left: 103%;
+  top: -143px;
+  color: white;
+}
+
+.top1name #a {
+  color: white;
+}
+
+.percentage 
+{
+  position: relative;
+  color: white;
+  left: 100%;
+  top: -74px;
+}

@@ -65,7 +65,20 @@
 		<path d="M1412 897q0-27-18-45l-91-91q-18-18-45-18t-45 18l-189 189v-502q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v502l-189-189q-19-19-45-19t-45 19l-91 91q-18 18-18 45t18 45l362 362 91 91q18 18 45 18t45-18l91-91 362-362q18-18 18-45zm252-1q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" fill="#94EF18"></path></svg>
     </div>
     <div class="container top, section">
-
+      <div class="composant">
+        <div class="textContainer">
+            <div class="window2Tails"></div>
+            <div class="window2TailStart"></div>
+            <h2 class="randomPokemon">Top 3 Pokemons most used</h2>
+            <div class="window2Tail1"></div>
+            <div class="window2Tail2"></div>
+            <div class="window2Tail3"></div>
+            <div class="top1"><img src="../header/images/togekiss1.png" alt=""><div class="top1name"><h2><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=togekiss">Togekiss</h2><h2>N°1</h2> <div class="percentage"><h2>33.33%</h2></div> </div>  </div>
+            <div class="top2"><img src="../header/images/togekiss1.png" alt=""><div class="top1name"><h2><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=tyranitar">Tyranitar</h2><h2>N°2</h2> <div class="percentage"><h2>33.33%</h2></div> </div>  </div>
+            <div class="top3"><img src="../header/images/togekiss1.png" alt=""><div class="top1name"><h2><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=dragapult">Dragapult</h2><h2>N°3</h2> <div class="percentage"><h2>33.33%</h2></div> </div>  </div>
+        </div>
+        
+     </div> 
     </div>
     <div class="container about, section"  id="sectionAbout">
       <div class="composant">
