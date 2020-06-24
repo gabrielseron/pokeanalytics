@@ -49,7 +49,7 @@ body {
 
 @keyframes scroll{
   100%{
-    background-position:-3000px 0px;
+    background-position: 3000px 3000px;
   }
 }
 

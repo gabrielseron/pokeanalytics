@@ -49,7 +49,7 @@ body {
 
 @keyframes scroll{
   100%{
-    background-position:-3000px 0px;
+    background-position: 3000px 3000px;
   }
 }
 
@@ -69,7 +69,6 @@ li {
   position: fixed;
   display: block;
   width: 100%;
-  z-index: 5;
   background: rgba(49, 49, 49, 1);
   background-image: linear-gradient(rgba(24, 24, 24, .7) .3em, transparent .3em), linear-gradient(90deg,rgba(24, 24, 24, .7) .3em, transparent .3em);
   background-size: 5vh 5vh;
@@ -79,11 +78,30 @@ li {
   z-index: 0;
 }
 
+.footer
+{
+  bottom: 0px;
+  height: 10vh;
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: rgba(49, 49, 49, 1);
+  background-image: linear-gradient(rgba(24, 24, 24, .7) .3em, transparent .3em), linear-gradient(90deg,rgba(24, 24, 24, .7) .3em, transparent .3em);
+  background-size: 5vh 5vh;
+  animation:100s scroll infinite linear;
+  font-family: "CorporativeBold";
+  font-size: 18px;
+}
 
+.footerCenter
+{
+  margin-top: 2.5vh;
+}
 
 .footer_logo {
 width: 8%;
 min-width: 3%;
+margin-left: 1vw;
 }
 
 .footer_contact {
@@ -191,7 +209,7 @@ font-family: "CorporativeBlack" !important;
   margin-left: -150px;
   margin-top: 2.2vh;
   background-image: url('../images/FlyingBack.webp');
-  background-position-x: 110px;
+  background-position-x: 117px;
   background-size: 25vh 25vh;
   transform:  skew(30deg);
   border-style: solid;
@@ -387,7 +405,7 @@ font-family: "CorporativeBlack" !important;
   width: 55vw;
   height: 2vh;
   bottom: -10vh;
-  margin-left: 4vw;
+  margin-left: 4.5vw;
   background-color: #6699FF;
   transform: skew(30deg);
   border-style: solid;
@@ -395,37 +413,24 @@ font-family: "CorporativeBlack" !important;
   border-width: 6px;
 
 }
-.cubebotnavFive{
+.cubebotnavFive, .cubebotnavSix, .cubebotnavSeven{
   position: absolute;
-  width: 38px;
-  height: 19px;
+  width: 2vw;
+  height: 2vh;
+  bottom: -10vh;
   background-color: #94EF18;
-  transform: translatex(1120px) translateY(176px) skew(30deg);
+  transform: skew(30deg) translateX(69.5vw);;
   border-style: solid;
   border-color: #528418;
   border-width: 6px;
+  z-index: 5;
 
 }
 .cubebotnavSix{
-  position: absolute;
-  width: 38px;
-  height: 19px;
-  background-color: #94EF18;
-  transform: translatex(1195px) translateY(176px) skew(30deg);
-  border-style: solid;
-  border-color: #528418;
-  border-width: 6px;
-
+  transform: skew(30deg) translateX(65.5vw);
 }
 .cubebotnavSeven{
-  position: absolute;
-  width: 38px;
-  height: 19px;
-  background-color: #94EF18;
-  transform: translatex(1270px) translateY(176px) skew(30deg);
-  border-style: solid;
-  border-color: #528418;
-  border-width: 6px;
+  transform: skew(30deg) translateX(61.5vw);
 }
 /*
 * Nav informations
@@ -598,88 +603,6 @@ font-family: "CorporativeBlack" !important;
   color: white;
 }
 
-.cubeStat1{
-  position: absolute;
-  width: 18px;
-  height: 29px;
-  background-color: #94EF18;
-  transform: skew(42deg);
-  border-style: solid;
-  border-color: #528418;
-  border-width: 6px;
-  top: 25px;
-  left: 86%;
-}
-
-.cubeStat2{
-  position: absolute;
-  width: 18px;
-  height: 29px;
-  background-color: #94EF18;
-  transform: skew(42deg);
-  border-style: solid;
-  border-color: #528418;
-  border-width: 6px;
-  top: 25px;
-  left: 92%;
-}
-
-.cubeStat3{
-  position: absolute;
-  width: 18px;
-  height: 29px;
-  background-color: #94EF18;
-  transform: skew(42deg);
-  border-style: solid;
-  border-color: #528418;
-  border-width: 6px;
-  top: 25px;
-  left: 98%;
-}
-
-.cubeMove1 {
-  position: absolute;
-  width: 18px;
-  height: 29px;
-  background-color: #94EF18;
-  transform: skew(42deg);
-  border-style: solid;
-  border-color: #528418;
-  border-width: 6px;
-  top: 24px;
-  left: 438px;
-}
-
-.cubeMove2 {
-  position: absolute;
-  width: 18px;
-  height: 29px;
-  background-color: #94EF18;
-  transform: skew(42deg);
-  border-style: solid;
-  border-color: #528418;
-  border-width: 6px;
-  top: 24px;
-  left: 468px;
-}
-
-.cubeMove3 {
-  position: absolute;
-  width: 18px;
-  height: 29px;
-  background-color: #94EF18;
-  transform: skew(42deg);
-  border-style: solid;
-  border-color: #528418;
-  border-width: 6px;
-  top: 24px;
-  left: 498px;
-}
-
-
-
-
-
 
 .about
 {
@@ -694,7 +617,7 @@ font-family: "CorporativeBlack" !important;
   justify-content: space-around;
 }
 
-.textContainer, .textContainer2
+.textContainer, .textContainer2, .text2Container, .text2Container2
 {
   width: 40vw;
   height: 50vh;
@@ -708,6 +631,12 @@ font-family: "CorporativeBlack" !important;
 .textContainer2
 {
   width: 27vw;
+}
+
+.text2Container, .text2Container2
+{
+  margin-top: -8vh;
+  height: 60vh;
 }
 
 .windowTailStart

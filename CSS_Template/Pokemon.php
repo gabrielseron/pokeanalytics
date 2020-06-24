@@ -55,22 +55,19 @@
         <div class="rightCubenavSix"></div>
         <div class="rightCubenavSeven"></div>
       </div>
-    </nav>
+   </nav>
         <div id="footer">
-
-      <div class="botnav">  
-        <div class="cubebotnav"></div>
-        <div class="cubebotnavOne"></div>
-        <img src="./images/logo.png" alt="logo">
-        <div class="cubebotnavTwo"></div>
-        <div class="cubebotnavThree"></div>
-        <div class="cubebotnavFive"></div>
-        <div class="cubebotnavSix"></div>
-        <div class="cubebotnavSeven"></div>
-      </div>
-    </div>
-    </footer>
-    </div>
+          <div class="botnav">  
+            <div class="cubebotnav"></div>
+            <div class="cubebotnavOne"></div>
+            <img src="./images/logo.png" alt="logo">
+            <div class="cubebotnavTwo"></div>
+            <div class="cubebotnavThree"></div>
+            <div class="cubebotnavFive"></div>
+            <div class="cubebotnavSix"></div>
+            <div class="cubebotnavSeven"></div>
+          </div>
+        </div>
 
   <div id="fullPage">
     <div class="container pokeNav, section">
@@ -141,12 +138,21 @@
           </div>
         </div>
       </div>
-    <div class="container yacine, section">
-    <div class="container affiches, section">
+    <div class="container more, section">
     
+    </div>
+    <footer class="footer" >
+      <div class="footerCenter">
+        <img src="./images/logo.png" class="footer_logo" alt="">
+        <span class="footer_contact">
+          <a href="#sectionAbout">About</a>
+        </span>
+      </div> 
+    </footer>
+    <div class="container items, section">
 
     <div class="composant">
-        <div class="textContainer">
+        <div class="text2Container">
           <img class="logo" src="./images/logo.png" class="footer_logo" alt="">
           <p class="homeText">The N°1 reference for Pokémon statistics</p>
           <div class="windowTails"></div>
@@ -156,7 +162,7 @@
           <div class="windowTail2"></div>
           <div class="windowTail3"></div>
         </div>
-        <div class="textContainer2">
+        <div class="text2Container2">
           <div class="window2Tails"></div>
           <div class="window2TailStart"></div>
           <h2 class="randomPokemon">EV Spread</h2>
@@ -399,7 +405,7 @@
     new fullpage('#fullPage', {
       autoScrolling: true,
       navigation: true,
-      navigationTooltips: ["Stats & Moves", "items & EV", "Test3"],
+      navigationTooltips: ["Stats & Moves", "items & EV", "More"],
       showActiveTooltip: false
     })
   </script>
