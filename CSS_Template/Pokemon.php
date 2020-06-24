@@ -96,6 +96,32 @@
       </div>
     </div>
     <div class="container yacine, section">
+
+    <div class="composant">
+        <div class="textContainer">
+          <img class="logo" src="./images/logo.png" class="footer_logo" alt="">
+          <p class="homeText">The N°1 reference for Pokémon statistics</p>
+          <div class="windowTails"></div>
+          <div class="windowTailStart"></div>
+          <h2 class="welcome">Most held items</h2>
+          <div class="windowTail1"></div>
+          <div class="windowTail2"></div>
+          <div class="windowTail3"></div>
+        </div>
+        <div class="textContainer2">
+          <div class="window2Tails"></div>
+          <div class="window2TailStart"></div>
+          <h2 class="randomPokemon">EV Spread</h2>
+          <div class="window2Tail1"></div>
+          <div class="window2Tail2"></div>
+          <div class="window2Tail3"></div>
+          <div class="evSpread">
+            <div class="evSpread1">Timid 0/0/252/4/252</div>
+            <div class="evSpread2">Timid 0/0/252/4/252</div>
+            <div class="evSpread3">Timid 0/0/252/4/252</div>
+          </div>
+      </div>
+
       <div class="botnav">  
         <div class="cubebotnav"></div>
         <div class="cubebotnavOne"></div>
@@ -107,9 +133,6 @@
         <div class="cubebotnavSix"></div>
         <div class="cubebotnavSeven"></div>
       </div>
-    </div>
-    <div class="container affiches, section">
-    
     </div>
   </div>  
   <script src="scripts/main.js"></script>

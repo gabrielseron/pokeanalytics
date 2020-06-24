@@ -690,6 +690,11 @@ font-family: "CorporativeBlack" !important;
   text-align: center;
 }
 
+.textContainer2
+{
+  width: 27vw;
+}
+
 .windowTailStart
 {
   position: absolute;
@@ -820,3 +825,15 @@ font-family: "CorporativeBlack" !important;
   color : white;
 }
 
+.evSpread
+{
+  text-align: left;
+  font-size: 16pt;
+}
+
+.evSpread1, .evSpread2, .evSpread3
+{
+  padding-left: 20px;
+  padding-top: 62px;
+  padding-bottom: 65px;
+}
