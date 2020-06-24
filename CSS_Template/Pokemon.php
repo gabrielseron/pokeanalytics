@@ -10,21 +10,29 @@
 </head>
 <body class="container">
   <div id="nav">
-    <nav>
+  </div>
+  <nav>
       <div class="topFix">
         <div class="rightCubenav">
             <img src="./images/togekiss2.png" alt="togekiss">
         </div>
         <div class="rightCubenavOne"></div>
-        <div class="rightCubenavTwo"></div>
         <div class="rightCubenavThree"></div>
+        <div class="rightCubenavTwo"></div>
         <div class="rightCubenavFour"></div>
         <div class="rightCubenavFive"></div>
         <div class="rightCubenavSix"></div>
         <div class="rightCubenavSeven"></div>
       </div>
     </nav>
-  </div>
+    <div id="footer">
+    <footer class="footer" >
+      <img src="./images/logo.png" class="footer_logo" alt="">
+      <span class="footer_contact">
+        <a href="#sectionAbout">About</a>
+      </span>
+    </footer>
+    </div>
 
   <div id="fullPage">
     <div class="container pokeNav, section">
