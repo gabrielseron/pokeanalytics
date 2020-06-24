@@ -25,12 +25,19 @@
         <div class="rightCubenavSeven"></div>
       </div>
     </nav>
-    <div id="footer">
-    <footer class="footer" >
-      <img src="./images/logo.png" class="footer_logo" alt="">
-      <span class="footer_contact">
-        <a href="#sectionAbout">About</a>
-      </span>
+        <div id="footer">
+
+      <div class="botnav">  
+        <div class="cubebotnav"></div>
+        <div class="cubebotnavOne"></div>
+        <img src="./images/logo.png" alt="logo">
+        <div class="cubebotnavTwo"></div>
+        <div class="cubebotnavThree"></div>
+        <div class="cubebotnavFive"></div>
+        <div class="cubebotnavSix"></div>
+        <div class="cubebotnavSeven"></div>
+      </div>
+    </div>
     </footer>
     </div>
 
@@ -104,18 +111,6 @@
       </div>
     </div>
     <div class="container yacine, section">
-      <div class="botnav">  
-        <div class="cubebotnav"></div>
-        <div class="cubebotnavOne"></div>
-        <div class="cubebotnavTwo">
-          <img src="./images/togekiss1.png" alt="togekiss">
-        </div>
-        <div class="cubebotnavThree"></div>
-        <div class="cubebotnavFive"></div>
-        <div class="cubebotnavSix"></div>
-        <div class="cubebotnavSeven"></div>
-      </div>
-    </div>
     <div class="container affiches, section">
     
     </div>
