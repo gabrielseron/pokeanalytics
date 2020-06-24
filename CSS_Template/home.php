@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <title>Poké Pro Strat</title>
   <meta name="description" content="Description de ma page pour les moteurs de recherche">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./styles/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
@@ -15,7 +16,7 @@
     <ul class="menu">
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
-        <form autocomplete="off" action="../index.php">
+        <form autocomplete="off" action="./pokemon.php">
           <div class="autocomplete">
             <input id="myInput" type="text" name="pokemon" placeholder="Search" required>
             <div class="tails"></div>

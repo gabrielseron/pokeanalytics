@@ -90,6 +90,15 @@
           </div>
           <canvas class="movesChart"></canvas>
         </div>
+        <div class="movesChoices">
+          <div class="movesTitle">
+            <h2>Moves</h2>
+            <div class="cubeMove1"></div>
+            <div class="cubeMove2"></div>
+            <div class="cubeMove3"></div>
+          </div>
+          <canvas class="movesChart"></canvas>
+        </div>
       </main>
     </div>
   </div>

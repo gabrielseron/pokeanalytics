@@ -1,7 +1,6 @@
 <?php
 
     include './config.php';
-    include_once './array.php';
     $pokemon = $_GET["pokemon"];
     $generation = 7;
     $tier = 'ou';
@@ -28,7 +27,6 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +34,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo '[' . ucFirst($tier) . ' ' . 'Gen ' . $generation .'] ' . ucfirst($pokemon) ;?></title>
     <link rel="icon" href="<?php echo $pokeIco ;?>" type="image/favicon">
-    <!-- <link rel="stylesheet" href="./CSS_TEMPLATE/styles/home.css"> -->
+    <link rel="stylesheet" href="./CSS_Template/styles/home.css">
 </head>
 <body>
     <div class="hidden">
