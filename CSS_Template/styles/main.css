@@ -726,7 +726,7 @@ font-family: "CorporativeBlack" !important;
 .windowTail1, .windowTail2, .windowTail3
 {
   position: absolute;
-  margin-top: -251px;
+  margin-top: -243px;
   margin-left: 407px;;
   width: 25px;
   height: 30px;
@@ -736,6 +736,7 @@ font-family: "CorporativeBlack" !important;
   border-width: 5px;
   transform: skew(30deg) translateX(-100px);
   z-index: 5;
+  box-sizing: border-box;
 }
 
 .windowTail2
@@ -761,7 +762,7 @@ font-family: "CorporativeBlack" !important;
 {
   position: absolute;
   margin-top: -45px;
-  margin-left: -6px;
+  margin-left: -6px;;
   width: 400px;
   height: 44px;
   background: rgba(24, 24, 24, 1);
@@ -784,8 +785,8 @@ font-family: "CorporativeBlack" !important;
 .window2Tail1, .window2Tail2, .window2Tail3
 {
   position: absolute;
-  margin-top: -45px;
-  margin-left: 407px;
+  margin-top: -38px;
+  margin-left: 407px;;
   width: 25px;
   height: 30px;
   background: #94EF18;
@@ -794,17 +795,19 @@ font-family: "CorporativeBlack" !important;
   border-width: 5px;
   transform: skew(30deg) translateX(-100px);
   z-index: 5;
+  box-sizing: border-box;
 }
 
 .window2Tail2
 {
-  margin-left: 442px;
+  margin-left: 442px;;
 }
 
 .window2Tail3
 {
   margin-left: 476px;
 }
+
 
 .homeText{
   color : white;
@@ -816,3 +819,4 @@ font-family: "CorporativeBlack" !important;
 .text{
   color : white;
 }
+
