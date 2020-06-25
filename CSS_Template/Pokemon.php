@@ -94,7 +94,7 @@
               <li class="valuetiny"><p><?php echo ucfirst($_type->type->name) ;?></p></li>
               <?php endforeach ;?>
               <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
-              <li class="valuetiny"><p><?php echo $smogonData->usage ;?>%</p></li>
+              <li class="valuetiny"><p><?php echo $smogonData->usage ;?></p></li>
             </ul>
           </div>
           <div class="talents">
@@ -146,7 +146,7 @@
     </div>
     <footer class="footer" >
       <div class="footerCenter">
-        <img src="./images/logo.png" class="footer_logo" alt="">
+        <a href="home.php"><img src="./images/logo.png" class="footer_logo" alt=""></a>
         <span class="footer_contact">
           <a href="#sectionAbout">About</a>
         </span>
