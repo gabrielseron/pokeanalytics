@@ -73,20 +73,24 @@
     <div class="container pokeNav, section">
       <div id="topnav">
         <nav>
-          <div class="cubenav infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
+          <div class="cubenav">"</div>
           <div class="cubenavOne"></div>
           <div class="cubenavTwo">
             <img src="./images/togekiss1.png" alt="togekiss">
           </div>
-          <div class="cubenavThree infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
+          <div class="cubenavThree"></div>
           <div class="cubenavFour"></div>
           <div class="cubenavFive"></div>
           <div class="cubenavSix"></div>
           <div class="cubenavSeven"></div>
           <div class="titlemove">
             <ul class="menutitle titleuber">
-              <li class="titlevalue infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><h2>Togekiss</h2></li>
+              <div class="infos"><span class="infosTooltip"><h3>Name</h3></span>
+              <li class="titlevalue"><h2>Togekiss</h2></li>
+              </div>
+              <div class="infos"><span class="infosTooltip"><h3>Tier</h3></span>
               <li class="titlevalue"><h2>UBER</h2></li>
+              </div>
             </ul>
             <ul class="type">
               <li class="valuetiny"><p>Fairy</p></li>
@@ -99,19 +103,24 @@
             <div class="ribbonone">
               <ul class="menu open translatone infos">
                 <li class="ribbon"><img src="images/Ribbon3.png" class="ribbon" alt=""></li>
-                <li class="value infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><p>90% Serene Grace</p></li>
+                <div class="infos"><span class="infosTooltip"><h3>Most used talent</h3></span>
+                <li class="value"><p>90% Serene Grace</p></li>
               </ul>
             </div>
             <div class="ribbontwo">
               <ul class="menu open translatsec">
                 <li class="ribbon"><img src="images/Ribbon2.png" class="ribbon" alt=""></li>
+                <div class="infos"><span class="infosTooltip"><h3>Second most used talent</h3></span>
                 <li class="value"><p>40% Super Luck</p></li>
+               </div>
               </ul> 
             </div>
             <div class="ribbonthree">
               <ul class="menu open">
                 <li class="ribbon"><img src="images/Ribbon1.png" class="ribbon" alt=""></li>
+                <div class="infos"><span class="infosTooltip"><h3>Third most used talent</h3></span>
                 <li class="value"><p>10% Hustle</p></li>
+                </div>
               </ul>
             </div>
           </div>
@@ -127,8 +136,7 @@
         <div class="windowTail3"></div>
         <canvas class="statsChart"></canvas>
       </div>
-      <div class="textContainer2 infos">
-      <span class="infosTooltip">Affronte les arabes</span>
+      <div class="textContainer2">
         <div class="window2Tails"></div>
         <div class="window2TailStart"></div>
         <h2 class="randomPokemon">Moves</h2>
