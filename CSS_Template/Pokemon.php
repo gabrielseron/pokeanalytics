@@ -102,14 +102,10 @@
               <?php endforeach ;?>
               <div class="infos"><span class="infosTooltip"><h3>Usage rank</h3></span>
               <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
-<<<<<<< HEAD
-              <li class="valuetiny"><p><?php echo round($smogonData->usage) ;?></p></li>
-=======
               </div>
               <div class="infos"><span class="infosTooltip"><h3>Usage percentage</h3></span>
-              <li class="valuetiny"><p><?php echo $smogonData->usage ;?></p></li>
+              <li class="valuetiny"><p><?php echo round($smogonData->usage) ;?></p></li>
               </div>
->>>>>>> d1c5c24a1937d39a44e8bf0932c2deebe40029af
             </ul>
           </div>
           <div class="talents">
@@ -178,11 +174,7 @@
           <div class="window2Tail1"></div>
           <div class="window2Tail2"></div>
           <div class="window2Tail3"></div>
-          <div class="evSpread">
-            <div class="evSpread1">Timid 0/0/252/4/252</div>
-            <div class="evSpread2">Timid 0/0/252/4/252</div>
-            <div class="evSpread3">Timid 0/0/252/4/252</div>
-          </div>
+          <canvas class="evChart"></canvas>
       </div>
     </div>
     <footer class="footer" >

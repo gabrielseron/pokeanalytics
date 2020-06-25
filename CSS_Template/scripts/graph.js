@@ -141,11 +141,19 @@ if (document.querySelector('.ability3')) {
     pokeab3.innerHTML = pokeAbility3
 }
 
+const pokeEvName1 = document.querySelector('.spread1Name').innerHTML
+const pokeEvName2 = document.querySelector('.spread2Name').innerHTML
+const pokeEvName3 = document.querySelector('.spread3Name').innerHTML
+const pokeEvName4 = document.querySelector('.spread4Name').innerHTML
+const pokeEvName5 = document.querySelector('.spread5Name').innerHTML
+const pokeEvName6 = document.querySelector('.spread6Name').innerHTML
 
-
-
-
-
+const pokeEvUse1 = document.querySelector('.spread1Percent').innerHTML
+const pokeEvUse2 = document.querySelector('.spread2Percent').innerHTML
+const pokeEvUse3 = document.querySelector('.spread3Percent').innerHTML
+const pokeEvUse4 = document.querySelector('.spread4Percent').innerHTML
+const pokeEvUse5 = document.querySelector('.spread5Percent').innerHTML
+const pokeEvUse6 = document.querySelector('.spread6Percent').innerHTML
 
 
 const ctxMoves = document.querySelector('.movesChart').getContext('2d');
@@ -284,6 +292,43 @@ const itemsChart = new Chart(ctxItems, {
         },
         legend: {
             display: true,
+        }
+    }
+});
+
+const ctxEv = document.querySelector('.evChart').getContext('2d');
+const evChart = new Chart(ctxEv, {
+    // The type of chart we want to create
+    type: 'bar',
+    // The data for our dataset
+    data: {
+        labels: [pokeEvName1, pokeEvName2, pokeEvName3, pokeEvName4, pokeEvName5, pokeEvName6],
+        datasets: [{
+            label: '# title',
+            data: [pokeEvUse1.substring(0, pokeEvUse1.length -1), pokeEvUse2.substring(0, pokeEvUse2.length -1), pokeEvUse3.substring(0, pokeEvUse3.length -1), pokeEvUse4.substring(0, pokeEvUse4.length -1), pokeEvUse5.substring(0, pokeEvUse5.length -1), pokeEvUse6.substring(0, pokeEvUse6.length -1)],
+            backgroundColor: 'rgba(148, 239, 24, 0.3)',
+            borderColor: 'rgba(148, 239, 24, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        },
+        layout: {
+            padding: {
+                left: 10,
+                right: 20,
+                top: 100,
+                bottom: 0
+            }
+        },
+        legend: {
+            display: false,
         }
     }
 });
