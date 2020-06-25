@@ -15,10 +15,10 @@
     $smogonData = json_decode($smogonData);
 
     $pokeId = $pokeapiData->id;
-    if (strlen($pokeId) == 1) 
+    if (strlen($pokeId) == 1)
     {
         $pokeId = "00".$pokeId;
-    }elseif (strlen($pokeId) == 2) 
+    }elseif (strlen($pokeId) == 2)
     {
         $pokeId = "0".$pokeId;
     }
