@@ -80,7 +80,7 @@
             </div>
             </div>
             <div class="top2">
-            <img src="./images/tyranitar.png" alt="Tyranitar">
+            <img src="../header/images/tyranitar1.png" alt="Tyranitar">
             <div class="top1name"><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=tyranitar" style="color:white;"><h2>Tyranitar</h2></a><h2>N°2</h2> 
             <div class="percentage">35.84% Pick rate</div>
             </div>
