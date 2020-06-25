@@ -24,7 +24,7 @@
             <div class="tail2"></div>
             <div class="tail3"></div>
           </div>
-          <button type="submit"><span>Valider</span></button>
+          <button class="button" type="submit"><span>Go!</span></button>
         </form>
         <div class="search"><div>
       </li>
