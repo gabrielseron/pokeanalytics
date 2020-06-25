@@ -3,15 +3,9 @@
     include '../config.php';
     $pokemon = $_GET["pokemon"];
     $generation = 7;
-<<<<<<< HEAD
     $tier = 'ubers';
     
     
-=======
-    $tier = 'ou';
-
-
->>>>>>> 1a065ecb0fc02747508bdd247a3469d8a4dffa2f
     $pokeapi = 'https://pokeapi.co/api/v2/pokemon/'.$pokemon.'';
     $pokeapiData = @file_get_contents($pokeapi);
     $pokeapiData = json_decode($pokeapiData);
@@ -53,11 +47,7 @@
   <nav>
       <div class="topFix">
         <div class="rightCubenav">
-<<<<<<< HEAD
-        <img src="<?php echo $pokeIco ;?>" alt="shuffle">
-=======
         <img src="<?php echo $pokeIco;?>" alt="">
->>>>>>> 1a065ecb0fc02747508bdd247a3469d8a4dffa2f
         </div>
         <div class="rightCubenavOne"></div>
         <div class="rightCubenavThree"></div>
@@ -88,11 +78,7 @@
           <div class="cubenav infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavOne"></div>
           <div class="cubenavTwo">
-<<<<<<< HEAD
             <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
-=======
-          <img src="<?php echo $pokeapiData->sprites->front_default;?>" alt="pokeIcon" class="sprite">
->>>>>>> 1a065ecb0fc02747508bdd247a3469d8a4dffa2f
           </div>
           <div class="cubenavThree infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavFour"></div>
@@ -105,7 +91,7 @@
               <li class="titlevalue"><h2>UBER</h2></li>
             </ul>
             <ul class="type">
-            <?php foreach($pokeapiData->types as $_type): ?>
+              <?php foreach($pokeapiData->types as $_type): ?>
               <li class="valuetiny"><p><?php echo ucfirst($_type->type->name) ;?></p></li>
               <?php endforeach ;?>
               <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
@@ -177,7 +163,7 @@
           <div class="windowTail1"></div>
           <div class="windowTail2"></div>
           <div class="windowTail3"></div>
-          <!-- <canvas class="itemsChart"></canvas> -->
+          <canvas class="itemsChart"></canvas>
         </div>
         <div class="text2Container2">
           <div class="window2Tails"></div>

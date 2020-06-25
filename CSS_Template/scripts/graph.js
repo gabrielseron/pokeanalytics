@@ -28,11 +28,15 @@ const pokeMoveUse8 = document.querySelector('.move8Use').innerHTML
 const pokeMoveUse9 = document.querySelector('.move9Use').innerHTML
 const pokeMoveUse10 = document.querySelector('.move10Use').innerHTML
 
-const pokeItemName1 = document.querySelector('.item1Img').innerHTML
+const pokeItemName1 = document.querySelector('.item1').innerHTML
 const pokeItemName2 = document.querySelector('.item2').innerHTML
 const pokeItemName3 = document.querySelector('.item3').innerHTML
 const pokeItemName4 = document.querySelector('.item4').innerHTML
 
+const pokeItemUse1 = document.querySelector('.item1Use').innerHTML
+const pokeItemUse2 = document.querySelector('.item2Use').innerHTML
+const pokeItemUse3 = document.querySelector('.item3Use').innerHTML
+const pokeItemUse4 = document.querySelector('.item4Use').innerHTML
 
 
 const pokeab1 = document.querySelector('.abone')
@@ -66,9 +70,9 @@ const movesChart = new Chart(ctxMoves, {
         },
         layout: {
             padding: {
-                left: 20,
-                right: 40,
-                top: 80,
+                left: 10,
+                right: 20,
+                top: 100,
                 bottom: 0
             }
         },
@@ -108,9 +112,9 @@ const statsChart = new Chart(ctxStats, {
         },
         layout: {
             padding: {
-                left: 20,
-                right: 40,
-                top: 80,
+                left: 10,
+                right: 20,
+                top: 100,
                 bottom: 0
             }
         },
@@ -130,12 +134,12 @@ const statsChart = new Chart(ctxStats, {
 
 const ctxItems = document.querySelector('.itemsChart').getContext('2d');
 const itemsChart = new Chart(ctxItems, {
-    type: 'polarArea',
+    type: 'doughnut',
     data: {
         labels: [pokeItemName1, pokeItemName2, pokeItemName3, pokeItemName4],
         datasets: [{
             label: '# title',
-            data: [],
+            data: [pokeItemUse1.substring(0, pokeItemUse1.length -1), pokeItemUse2.substring(0, pokeItemUse2.length -1), pokeItemUse3.substring(0, pokeItemUse3.length -1), pokeItemUse4.substring(0, pokeItemUse4.length -1)],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -167,13 +171,13 @@ const itemsChart = new Chart(ctxItems, {
         layout: {
             padding: {
                 left: 10,
-                right: 0,
-                top: 0,
+                right: 20,
+                top: 100,
                 bottom: 0
             }
         },
         legend: {
-            display: false,
+            display: true,
         }
     }
 });
