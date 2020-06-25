@@ -99,7 +99,7 @@
               <li class="valuetiny"><p><?php echo ucfirst($_type->type->name) ;?></p></li>
               <?php endforeach ;?>
               <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
-              <li class="valuetiny"><p><?php echo $smogonData->usage ;?></p></li>
+              <li class="valuetiny"><p><?php echo round($smogonData->usage) ;?></p></li>
             </ul>
           </div>
           <div class="talents">
