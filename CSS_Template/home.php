@@ -16,7 +16,7 @@
     <ul class="menu">
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
-        <form autocomplete="off" action="./Pokemon.php">
+        <form autocomplete="off" action="./pokemon.php">
           <div class="autocomplete">
             <input id="myInput" type="text" name="pokemon" placeholder="Search" required>
             <div class="tails"></div>
@@ -55,10 +55,17 @@
       <div class="textContainer2">
         <div class="window2Tails"></div>
         <div class="window2TailStart"></div>
-        <h2 class="randomPokemon">Random Pokémon</h2>
+        <h2 class="randomPokemon">Pokemon of the week</h2>
         <div class="window2Tail1"></div>
         <div class="window2Tail2"></div>
         <div class="window2Tail3"></div>
+        <div class="topWeek">
+        <img src="images/483.png" alt="Dialga" style="width:209px;">
+        <a href="pokemon.php?pokemon=dialga"><h2 style="color:white;">Dialga</h2></a>
+        <div class="typeCase"><p style="transform:skew(-30deg);margin-top:2px;">Steel</p></div>
+        <div class="typeCase2"><p style="transform:skew(-30deg);margin-top:2px;">Dragon</p></div>
+        <h2 style="color:white;margin-top:-40px;">N°40 - UBER</h2>
+        </div>
         </div>
       </div>
       <svg class="arrow-circle-down bounce" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +127,7 @@
             It has been designed and developped by a group of frenchs College students.
             <br><br><br><br>
             Contact : <br>
-            <span class="tabulation"></span> developer : <span class="tabulation"></span>gabriel.seron@hetic.net<br>
+            <span class="tabulation"></span> back-end developer :<span class="tabulation3"></span>gabriel.seron@hetic.net<br>
             <span class="tabulation"></span> developer : <span class="tabulation"></span>edouard.eisenfisz@hetic.net<br>
             <span class="tabulation"></span> developer : <span class="tabulation"></span>valentin.sejourne@hetic.net<br>
             <span class="tabulation"></span> developer-designer : <span class="tabulation3"></span>henri.paulus@hetic.net<br>
