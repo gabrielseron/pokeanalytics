@@ -52,7 +52,11 @@ const movesChart = new Chart(ctxMoves, {
     data: {
         labels: [pokeMoveName1, pokeMoveName2, pokeMoveName3, pokeMoveName4, pokeMoveName5, pokeMoveName6, pokeMoveName7, pokeMoveName8, pokeMoveName9, pokeMoveName10],
         datasets: [{
-            fillState: 'white',
+            // barPercentage: 0.5,
+            // categoryPercentage: 1.0,
+            // barThickness: 6,
+            // maxBarThickness: 8,
+            // minBarLength: 2,
             label: '# title',
             data: [pokeMoveUse1.substring(0, pokeMoveUse1.length -1), pokeMoveUse2.substring(0, pokeMoveUse2.length -1), pokeMoveUse3.substring(0, pokeMoveUse3.length -1), pokeMoveUse4.substring(0, pokeMoveUse4.length -1), pokeMoveUse5.substring(0, pokeMoveUse5.length -1), pokeMoveUse6.substring(0, pokeMoveUse6.length -1), pokeMoveUse7.substring(0, pokeMoveUse7.length -1), pokeMoveUse8.substring(0, pokeMoveUse8.length -1), pokeMoveUse9.substring(0, pokeMoveUse9.length -1), pokeMoveUse10.substring(0, pokeMoveUse10.length -1)],
             backgroundColor: 'rgba(148, 239, 24, 0.3)',
