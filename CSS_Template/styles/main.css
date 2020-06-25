@@ -451,9 +451,7 @@ font-family: "CorporativeBlack" !important;
 }
 
 .menu {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
+  
 }
 .menutitle{
   position: relative;
@@ -469,15 +467,16 @@ font-family: "CorporativeBlack" !important;
   transform: translateX(40px);
 }
 .talents{
-  right: 0;
-  transform: translateX(-10vw)  translateY(-60px);
+  position: relative;
+  left: 80vw;
+  top: -110px;
 }
 
 .ribbontwo{
-  transform: translateY(-1.5vh);
+  transform: translateY(-40px);
 }
 .ribbonthree{
-  transform: translateY(-3vh);
+  transform: translateY(-80px);
 }
 .value {
     width: 200px;
@@ -538,13 +537,13 @@ font-family: "CorporativeBlack" !important;
 
 .ribbon{
   height: 40px;
-  transform:translateX(-15px);
+  transform:translateX(-2vw) translateY(2.2vh);
 }
 .translatone{
-  transform:translateX(-80px);
+  transform:translateX(-60px);
 }
 .translatsec{
-  transform:translateX(-40px);
+  transform:translateX(-30px);
 }
 
 /* Main  */

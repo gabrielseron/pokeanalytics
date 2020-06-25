@@ -436,6 +436,29 @@ button span
   color : white;
 }
 
+.textAbout{
+  padding-top: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  text-align: left;
+  color: white;
+}
+
+.tabulation{
+  display: inline-block;
+  width: 6vw;
+}
+
+.tabulation2{
+  display: inline-block;
+  width: 6.5vw;
+}
+
+.tabulation3{
+  display: inline-block;
+  width: 2.5vw;
+}
+
 .arrow-circle-down {
   position: absolute;
 	display: block;
@@ -487,4 +510,36 @@ button span
 		-webkit-transform: translateY(-12px);
 		        transform: translateY(-12px);
 	}
+}
+
+.top1, .top2, .top3 {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.top1, .top2, .top3, #img  {
+  width: 234px;
+  height: 148px;
+}
+
+.top1name
+{
+  position: relative;
+  left: 103%;
+  top: -143px;
+  color: white;
+}
+
+.top1name #a {
+  color: white;
+}
+
+.percentage 
+{
+  position: relative;
+  color: white;
+  left: 101%;
+  top: -68px;
+  font-size: 17pt;  
 }

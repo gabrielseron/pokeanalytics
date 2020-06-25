@@ -74,19 +74,19 @@
     <div class="container pokeNav, section">
       <div id="topnav">
         <nav>
-          <div class="cubenav"></div>
+          <div class="cubenav infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavOne"></div>
           <div class="cubenavTwo">
             <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
           </div>
-          <div class="cubenavThree"></div>
+          <div class="cubenavThree infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavFour"></div>
           <div class="cubenavFive"></div>
           <div class="cubenavSix"></div>
           <div class="cubenavSeven"></div>
           <div class="titlemove">
             <ul class="menutitle titleuber">
-              <li class="titlevalue name"><h2>Togekiss</h2></li>
+              <li class="titlevalue infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><h2>Togekiss</h2></li>
               <li class="titlevalue"><h2>UBER</h2></li>
             </ul>
             <ul class="type">
@@ -98,9 +98,9 @@
           </div>
           <div class="talents">
             <div class="ribbonone">
-              <ul class="menu open translatone">
+              <ul class="menu open translatone infos">
                 <li class="ribbon"><img src="images/Ribbon3.png" class="ribbon" alt=""></li>
-                <li class="value"><p>90% Serene Grace</p></li>
+                <li class="value infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><p>90% Serene Grace</p></li>
               </ul>
             </div>
             <div class="ribbontwo">
@@ -120,21 +120,22 @@
       </div>
       <div class="composant">
         <div class="textContainer">
-          <div class="windowTails"></div>
-          <div class="windowTailStart"></div>
-          <h2 class="welcome">Base Stats</h2>
-          <div class="windowTail1"></div>
-          <div class="windowTail2"></div>
-          <div class="windowTail3"></div>
-          <canvas class="statsChart"></canvas>
-        </div>
-        <div class="textContainer2">
-          <div class="window2Tails"></div>
-          <div class="window2TailStart"></div>
-          <h2 class="randomPokemon">Moves</h2>
-          <div class="window2Tail1"></div>
-          <div class="window2Tail2"></div>
-          <div class="window2Tail3"></div>
+        <div class="windowTails"></div>
+        <div class="windowTailStart"></div>
+        <h2 class="welcome">Base Stats</h2>
+        <div class="windowTail1"></div>
+        <div class="windowTail2"></div>
+        <div class="windowTail3"></div>
+        <canvas class="statsChart"></canvas>
+      </div>
+      <div class="textContainer2 infos">
+      <span class="infosTooltip">Affronte les arabes</span>
+        <div class="window2Tails"></div>
+        <div class="window2TailStart"></div>
+        <h2 class="randomPokemon">Moves</h2>
+        <div class="window2Tail1"></div>
+        <div class="window2Tail2"></div>
+        <div class="window2Tail3"></div>
           <canvas class="movesChart"></canvas>
           </div>
         </div>
