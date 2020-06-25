@@ -543,3 +543,36 @@ button span
   top: -68px;
   font-size: 17pt;  
 }
+.topWeek {
+  position:relative;
+}
+
+.topWeek, #img
+{
+top: 30px;
+}
+
+.typeCase, .typeCase2
+{
+  width: 104px;
+  height: 34px;
+  transform: skew(30deg);
+  background: #ADADC6;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 6px;
+  margin-left: 245px;
+  margin-top: 31px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.typeCase2
+{
+  left: 143px;
+  top: -65px;
+  background: #8858F6;
+}
+
