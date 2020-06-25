@@ -4,8 +4,8 @@
     $pokemon = $_GET["pokemon"];
     $generation = 7;
     $tier = 'ou';
-    
-    
+
+
     $pokeapi = 'https://pokeapi.co/api/v2/pokemon/'.$pokemon.'';
     $pokeapiData = @file_get_contents($pokeapi);
     $pokeapiData = json_decode($pokeapiData);
@@ -15,10 +15,10 @@
     $smogonData = json_decode($smogonData);
 
     $pokeId = $pokeapiData->id;
-    if (strlen($pokeId) == 1) 
+    if (strlen($pokeId) == 1)
     {
         $pokeId = "00".$pokeId;
-    }elseif (strlen($pokeId) == 2) 
+    }elseif (strlen($pokeId) == 2)
     {
         $pokeId = "0".$pokeId;
     }
@@ -58,7 +58,7 @@
       </div>
    </nav>
         <div id="footer">
-          <div class="botnav">  
+          <div class="botnav">
             <div class="cubebotnav"></div>
             <div class="cubebotnavOne"></div>
             <img src="./images/logo.png" alt="logo">
@@ -108,7 +108,7 @@
               <ul class="menu open translatsec">
                 <li class="ribbon"><img src="images/Ribbon2.png" class="ribbon" alt=""></li>
                 <li class="value"><p>40% Super Luck</p></li>
-              </ul> 
+              </ul>
             </div>
             <div class="ribbonthree">
               <ul class="menu open">
@@ -142,7 +142,7 @@
         </div>
       </div>
     <div class="container more, section">
-    
+
     </div>
     <footer class="footer" >
       <div class="footerCenter">
@@ -150,7 +150,7 @@
         <span class="footer_contact">
           <a href="#sectionAbout">About</a>
         </span>
-      </div> 
+      </div>
     </footer>
     <div class="container items, section">
 
@@ -184,7 +184,7 @@
             <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
             <h3 class="name">Name : <?php echo ucfirst($pokemon) ;?></h3>
             <h4 class="id">Id : <?php echo $pokeId ;?></h4>
-    
+
             <?php $typeCount = 0 ;?>
             <?php foreach($pokeapiData->types as $_type): ?>
                 <?php $typeCount++ ;?>
@@ -210,7 +210,7 @@
         </div>
 
         <div class="part1">
-        
+
             <?php foreach($pokeapiData->stats as $_stat): ?>
 
                 <h4 class="<?php echo $_stat->stat->name?>"><?php echo $_stat->base_stat ;?></h4>
@@ -229,7 +229,7 @@
         </div>
 
         <div class="part2">
-        
+
             <?php $itemCount = 0 ;?>
             <?php foreach($smogonData->items as $key => $_item): ?>
                 <?php $itemCount++ ;?>
@@ -237,11 +237,11 @@
                 <h4 class="item<?php echo $itemCount ;?>Use"><?php echo $_item ;?></h4>
 
 
-                <?php 
+                <?php
                     $key = preg_replace('~[^\pL\d]+~u', '-', $key);
                     $key = strtolower($key);
 
-                    switch ($key) 
+                    switch ($key)
                     {
                         case 'buginium-z':
                             $key = $key . '--bag';
@@ -296,11 +296,11 @@
                             break;
                         case 'waterium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'aloraichium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'decidium-z':
                             $key = $key . '--bag';
@@ -312,31 +312,31 @@
 
                         case 'incinium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'kommonium-z':
                             $key = $key . '--bag';
                             break;
-                            
+
                         case 'lunalium-z':
                             $key = $key . '--bag';
                             break;
 
                         case 'lycanium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'marshadium-z':
                             $key = $key . '--bag';
                             break;
-                            
+
                         case 'mewnium-z':
                             $key = $key . '--bag';
                             break;
 
                         case 'mimikium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'pikanium-z':
                             $key = $key . '--bag';
@@ -348,19 +348,19 @@
 
                         case 'primarium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'snorlium-z':
                             $key = $key . '--bag';
                             break;
-                            
+
                         case 'solganium-z':
                             $key = $key . '--bag';
                             break;
 
                         case 'tapunium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'ultranecrozium-z':
                             $key = $key . '--bag';
@@ -402,7 +402,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <script src="./scripts/graph.js"></script>
-  
+
 
   <script>
     new fullpage('#fullPage', {
