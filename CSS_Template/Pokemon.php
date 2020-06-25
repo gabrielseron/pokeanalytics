@@ -85,12 +85,12 @@
           <div class="cubenavSeven"></div>
           <div class="titlemove">
             <ul class="menutitle titleuber">
-              <li class="titlevalue infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><h2>Togekiss</h2></li>
+              <li class="titlevalue infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><h2><?php echo ucfirst($pokeapiData->species->name) ?></h2></li>
               <li class="titlevalue"><h2>UBER</h2></li>
             </ul>
             <ul class="type">
-              <li class="valuetiny"><p>Fairy</p></li>
-              <li class="valuetiny tinyone"><p>Flying</p></li>
+              <li class="valuetiny"><p><?php echo ucfirst($pokeapiData->types[0]->type->name) ?></p></li>
+              <li class="valuetiny tinyone"><p> <?php echo ucfirst($pokeapiData->types[1]->type->name) ?> </p></li>
               <li class="valuetiny"><p>N°1</p></li>
               <li class="valuetiny"><p>41.22%</p></li>
             </ul>
