@@ -104,7 +104,9 @@
           <div class="window2Tail1"></div>
           <div class="window2Tail2"></div>
           <div class="window2Tail3"></div>
-          <p class="textAbout">This website has been done in an educational context, for the “Grand Ecole” course from the HETIC school. We didn’t ask for the permission to use the contents and data from Nintendo. Thus, this website will not be exploited in any commercial way.</p>
+          <p class="textAbout">The Pokémons from the 8th generation have missing informations, that's because some of the APIs used are not totally up ta date.
+            <br><br><br><br>
+            This website has been done in an educational context, for the “Grand Ecole” course from the HETIC school. We didn’t ask for the permission to use the contents and data from Nintendo. Thus, this website will not be exploited in any commercial way.</p>
         </div>
         <div class="textContainer2">
           <div class="window2Tails"></div>
