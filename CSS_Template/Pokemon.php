@@ -104,7 +104,7 @@
               <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
               </div>
               <div class="infos"><span class="infosTooltip"><h3>Usage percentage</h3></span>
-              <li class="valuetiny"><p><?php echo round($smogonData->usage) ;?></p></li>
+              <li class="valuetiny"><p><?php echo round($smogonData->usage, PHP_ROUND_HALF_UP) ;?>%</p></li>
               </div>
             </ul>
           </div>
