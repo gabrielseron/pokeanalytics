@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+  <link rel="icon" href="<?php echo $pokeIco ;?>" type="image/favicon">
 </head>
 <body class="container">
   <div id="nav">
@@ -150,19 +150,7 @@
           </div>
         </div>
       </div>
-    <div class="container more, section">
-
-    </div>
-    <footer class="footer" >
-      <div class="footerCenter">
-        <a href="home.php"><img src="./images/logo.png" class="footer_logo" alt=""></a>
-        <span class="footer_contact">
-          <a href="#sectionAbout">About</a>
-        </span>
-      </div>
-    </footer>
     <div class="container items, section">
-
     <div class="composant">
         <div class="text2Container">
           <div class="windowTails"></div>
@@ -186,6 +174,17 @@
             <div class="evSpread3">Timid 0/0/252/4/252</div>
           </div>
       </div>
+    </div>
+    <footer class="footer" >
+      <div class="footerCenter">
+        <a href="home.php"><img src="./images/logo.png" class="footer_logo" alt=""></a>
+        <span class="footer_contact">
+          <a href="#sectionAbout">About</a>
+        </span>
+      </div>
+    </footer>
+    <div class="container more, section">
+
   </div>
   <div class="hidden">
         <div class="navbar">
@@ -210,8 +209,7 @@
                 <?php $abilityCount = 0 ;?>
             <?php foreach($smogonData->abilities as $key => $_ability): ?>
                 <?php $abilityCount++ ;?>
-                <h4 class="abilityUse<?php echo $abilityCount ;?>">Use : <?php echo $_ability ;?></h4>
-                <h4 class="ability<?php echo $abilityCount ;?>">Ability : <?php echo $key ;?></h4>
+                <h4 class="ability<?php echo $abilityCount ;?>"><?php echo $key . $ability ;?></h4>
 
             <?php endforeach ;?>
             <br>

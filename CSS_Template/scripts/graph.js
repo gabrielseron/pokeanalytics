@@ -39,12 +39,29 @@ const pokeItemUse3 = document.querySelector('.item3Use').innerHTML
 const pokeItemUse4 = document.querySelector('.item4Use').innerHTML
 
 
+
+const pokeAbility1 = document.querySelector('.ability1').innerHTML
 const pokeab1 = document.querySelector('.abone')
-pokeab1.innerHTML = pokeMoveName1 + ' ' + pokeMoveUse1
-const pokeab2 = document.querySelector('.abtwo')
-pokeab2.innerHTML = pokeMoveName2 + ' ' + pokeMoveUse2
-const pokeab3 = document.querySelector('.abthree')
-pokeab3.innerHTML = pokeMoveName3 + ' ' + pokeMoveUse3
+pokeab1.innerHTML = pokeAbility1
+
+if (document.querySelector('.ability2').innerHTML != null) {
+    const pokeAbility2 = document.querySelector('.ability2').innerHTML
+    const pokeab2 = document.querySelector('.abtwo')
+    pokeab2.innerHTML = pokeAbility2
+}
+
+if (document.querySelector('.ability3').innerHTML) {
+    const pokeAbility3 = document.querySelector('.ability3').innerHTML
+    const pokeab3 = document.querySelector('.abthree')
+    pokeab3.innerHTML = pokeAbility3
+}
+
+
+
+
+
+
+
 
 const ctxMoves = document.querySelector('.movesChart').getContext('2d');
 const movesChart = new Chart(ctxMoves, {
