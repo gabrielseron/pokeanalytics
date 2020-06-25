@@ -3,7 +3,7 @@
     include '../config.php';
     $pokemon = $_GET["pokemon"];
     $generation = 7;
-    $tier = 'ou';
+    $tier = 'ubers';
     
     
     $pokeapi = 'https://pokeapi.co/api/v2/pokemon/'.$pokemon.'';
@@ -31,7 +31,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Poké Pro Strat</title>
+  <title><?php echo '[' . ucFirst($tier) . ' ' . 'Gen ' . $generation .'] ' . ucfirst($pokemon) ;?></title>
+  <link rel="icon" href="<?php echo $pokeIco ;?>" type="image/favicon">
   <meta name="description" content="Description de ma page pour les moteurs de recherche">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -45,7 +46,7 @@
   <nav>
       <div class="topFix">
         <div class="rightCubenav">
-            <img src="./images/togekiss2.png" alt="togekiss">
+        <img src="<?php echo $pokeIco ;?>" alt="shuffle">
         </div>
         <div class="rightCubenavOne"></div>
         <div class="rightCubenavThree"></div>
@@ -76,7 +77,7 @@
           <div class="cubenav"></div>
           <div class="cubenavOne"></div>
           <div class="cubenavTwo">
-            <img src="./images/togekiss1.png" alt="togekiss">
+            <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
           </div>
           <div class="cubenavThree"></div>
           <div class="cubenavFour"></div>
@@ -85,7 +86,7 @@
           <div class="cubenavSeven"></div>
           <div class="titlemove">
             <ul class="menutitle titleuber">
-              <li class="titlevalue"><h2>Togekiss</h2></li>
+              <li class="titlevalue name"><h2>Togekiss</h2></li>
               <li class="titlevalue"><h2>UBER</h2></li>
             </ul>
             <ul class="type">
@@ -153,14 +154,13 @@
 
     <div class="composant">
         <div class="text2Container">
-          <img class="logo" src="./images/logo.png" class="footer_logo" alt="">
-          <p class="homeText">The N°1 reference for Pokémon statistics</p>
           <div class="windowTails"></div>
           <div class="windowTailStart"></div>
           <h2 class="welcome">Most held items</h2>
           <div class="windowTail1"></div>
           <div class="windowTail2"></div>
           <div class="windowTail3"></div>
+          <!-- <canvas class="itemsChart"></canvas> -->
         </div>
         <div class="text2Container2">
           <div class="window2Tails"></div>
@@ -174,15 +174,14 @@
             <div class="evSpread2">Timid 0/0/252/4/252</div>
             <div class="evSpread3">Timid 0/0/252/4/252</div>
           </div>
-        </div>
-    </div>
-  <div class="hidden allobonjour">
+      </div>
+  </div>
+  <div class="hidden">
         <div class="navbar">
-        
             <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
             <h3 class="name">Name : <?php echo ucfirst($pokemon) ;?></h3>
             <h4 class="id">Id : <?php echo $pokeId ;?></h4>
-
+    
             <?php $typeCount = 0 ;?>
             <?php foreach($pokeapiData->types as $_type): ?>
                 <?php $typeCount++ ;?>
@@ -396,6 +395,7 @@
 
         </div>
     </div>
+  <script src="./scripts/pokemon.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <script src="./scripts/graph.js"></script>
