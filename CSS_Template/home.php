@@ -74,7 +74,7 @@
             <div class="window2Tail2"></div>
             <div class="window2Tail3"></div>
             <div class="top1">
-            <img src="./images/togekiss1.png" alt="Togekiss">
+            <img src="./images/togekiss.png" alt="Togekiss">
             <div class="top1name"><a href="pokemon.php?pokemon=togekiss" style="color:white;"><h2>Togekiss</h2></a><h2>N°1</h2>
             <div class="percentage">41.22% Pick rate</div>
             </div>
