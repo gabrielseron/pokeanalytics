@@ -16,7 +16,7 @@
     <ul class="menu">
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
-        <form autocomplete="off" action="./pokemon.php">
+        <form autocomplete="off" action="./Pokemon.php">
           <div class="autocomplete">
             <input id="myInput" type="text" name="pokemon" placeholder="Search" required>
             <div class="tails"></div>
@@ -43,8 +43,17 @@
     <div class="container home, section">
     <div class="composant">
       <div class="textContainer">
+      <br>
         <img class="logo" src="./images/logo.png" class="footer_logo" alt="">
-        <p class="homeText">The N°1 reference for Pokémon statistics</p>
+        <p class="homeText">The N°1 reference for Pokémon statistics.</p>
+        <p class="welcomeText">To use our tools, simply search for a Pokemon then scroll
+          <br> down to show more infos. If a Pokemon does not show any
+          <br> infos, it means it is not used in thee UBER competitve tier.
+          <br> Our website uses the Smogon API so Pokemon from the 8th geeneration will not show accurate infos as they are not yet implemented in competitions.
+          <br>
+        <br>
+        Have fun building your team!
+        </p>
         <div class="windowTails"></div>
         <div class="windowTailStart"></div>
         <h2 class="welcome">Welcome</h2>
@@ -111,9 +120,11 @@
           <div class="window2Tail1"></div>
           <div class="window2Tail2"></div>
           <div class="window2Tail3"></div>
-          <p class="textAbout">The Pokémons from the 8th generation have missing informations, that's because some of the APIs used are not totally up ta date.
+          <p class="textAbout">The Pokémons from the 8th generation have missing informations, that's because some of the APIs used are not totally up ta date yet.
             <br><br><br><br>
-            This website has been done in an educational context, for the “Grand Ecole” course from the HETIC school. We didn’t ask for the permission to use the contents and data from Nintendo. Thus, this website will not be exploited in any commercial way.</p>
+            This website has been done in an educational context, for the “Grand Ecole” course from the HETIC school. We didn’t ask for the permission to use the contents and data from Nintendo. Thus, this website will not be exploited in any commercial way.
+            <br><br>
+            POKEMON, characters, names, and related indicia are trademarks owned by Nintendo Inc. and The Pokémon Company Internationals</p>
         </div>
         <div class="textContainer2">
           <div class="window2Tails"></div>
@@ -122,9 +133,9 @@
           <div class="window2Tail1"></div>
           <div class="window2Tail2"></div>
           <div class="window2Tail3"></div>
-          <p class="textAbout">This website is using the data from pokéApi.co and smogon-usage-stats.herokuapp.com.
+          <p class="textAbout">This website uses the data from pokeApi.co and smogon-usage-stats.herokuapp.com.
             <br><br>
-            It has been designed and developped by a group of frenchs College students.
+            It has been designed and developped by a team of french college students.
             <br><br><br><br>
             Contact : <br>
             <span class="tabulation"></span> back-end developer :<span class="tabulation3"></span>gabriel.seron@hetic.net<br>
