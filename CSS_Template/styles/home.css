@@ -496,8 +496,8 @@ button span
 }
 
 .top1, .top2, .top3, #img  {
- width: 220px;
- height: 145px;
+  width: 234px;
+  height: 148px;
 }
 
 .top1name
@@ -516,6 +516,7 @@ button span
 {
   position: relative;
   color: white;
-  left: 100%;
-  top: -74px;
+  left: 101%;
+  top: -68px;
+  font-size: 17pt;  
 }
