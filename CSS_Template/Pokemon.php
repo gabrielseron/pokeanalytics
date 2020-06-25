@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
 </head>
 <body class="container">
   <div id="nav">
@@ -45,7 +46,7 @@
   <nav>
       <div class="topFix">
         <div class="rightCubenav">
-        <img src="<?php echo $pokeIco ;?>" alt="">
+        <img src="<?php echo $pokeIco;?>" alt="">
         </div>
         <div class="rightCubenavOne"></div>
         <div class="rightCubenavThree"></div>
@@ -76,7 +77,7 @@
           <div class="cubenav infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavOne"></div>
           <div class="cubenavTwo">
-          <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
+          <img src="<?php echo $pokeapiData->sprites->front_default;?>" alt="pokeIcon" class="sprite">
           </div>
           <div class="cubenavThree infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavFour"></div>
@@ -85,14 +86,15 @@
           <div class="cubenavSeven"></div>
           <div class="titlemove">
             <ul class="menutitle titleuber">
-              <li class="titlevalue infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><h2>Togekiss</h2></li>
+              <li class="titlevalue infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><h2><?php echo ucfirst($pokemon) ;?></h2></li>
               <li class="titlevalue"><h2>UBER</h2></li>
             </ul>
             <ul class="type">
-              <li class="valuetiny"><p>Fairy</p></li>
-              <li class="valuetiny tinyone"><p>Flying</p></li>
-              <li class="valuetiny"><p>N°1</p></li>
-              <li class="valuetiny"><p>41.22%</p></li>
+            <?php foreach($pokeapiData->types as $_type): ?>
+              <li class="valuetiny"><p><?php echo ucfirst($_type->type->name) ;?></p></li>
+              <?php endforeach ;?>
+              <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
+              <li class="valuetiny"><p><?php echo $smogonData->usage ;?>%</p></li>
             </ul>
           </div>
           <div class="talents">
