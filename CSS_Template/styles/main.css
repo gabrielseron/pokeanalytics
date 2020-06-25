@@ -220,9 +220,9 @@ font-family: "CorporativeBlack" !important;
 .cubenavTwo img{
   transform: skew(-30deg);
   margin-left: 170px;
-  margin-top: -0.5vw;
-  width: 150px;
-  height: auto;
+  margin-top: -0.5vh;
+  width: auto;
+  height: 13vh;
 }
 
 .cubenavThree{
@@ -243,7 +243,7 @@ font-family: "CorporativeBlack" !important;
   width: 20vw;
   height: 2vh;
   margin-left: 300px;
-  margin-top: 11.7vh;
+  margin-top: 11.75vh;
   background-color: #6699FF;
   z-index: 5;
 }
