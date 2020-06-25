@@ -220,7 +220,7 @@ font-family: "CorporativeBlack" !important;
 .cubenavTwo img{
   transform: skew(-30deg);
   margin-left: 170px;
-  margin-top: 1vw;
+  margin-top: -1vw;
   width: 150px;
   height: auto;
 }
@@ -449,9 +449,6 @@ font-family: "CorporativeBlack" !important;
   margin-top: 3.7%;
   transform: rotate(-90deg);
 }
-
-/* .menu {
-} */
 
 .menutitle{
   position: relative;

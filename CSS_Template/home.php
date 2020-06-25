@@ -74,26 +74,26 @@
             <div class="window2Tail2"></div>
             <div class="window2Tail3"></div>
             <div class="top1">
-            <img src="../header/images/togekiss1.png" alt="Togekiss">
-            <div class="top1name"><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=togekiss" style="color:white;"><h2>Togekiss</h2></a><h2>N°1</h2> 
+            <img src="./images/togekiss1.png" alt="Togekiss">
+            <div class="top1name"><a href="pokemon.php?pokemon=togekiss" style="color:white;"><h2>Togekiss</h2></a><h2>N°1</h2>
             <div class="percentage">41.22% Pick rate</div>
             </div>
             </div>
             <div class="top2">
-            <img src="../header/images/tyranitar.png" alt="Tyranitar">
-            <div class="top1name"><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=tyranitar" style="color:white;"><h2>Tyranitar</h2></a><h2>N°2</h2> 
+            <img src="./images/tyranitar.png" alt="Tyranitar">
+            <div class="top1name"><a href="pokemon.php?pokemon=tyranitar" style="color:white;"><h2>Tyranitar</h2></a><h2>N°2</h2>
             <div class="percentage">35.84% Pick rate</div>
             </div>
             </div>
             <div class="top3">
-            <img src="../header/images/dragapult.png" alt="Dragapult">
-            <div class="top1name"><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=dragapult" style="color:white;"><h2>Dragapult</h2></a><h2>N°3</h2> 
+            <img src="./images/dusclops.png" alt="Dragapult">
+            <div class="top1name"><a href="pokemon.php?pokemon=dusclops" style="color:white;"><h2>Dusclops</h2></a><h2>N°3</h2>
             <div class="percentage">35.57% Pick rate</div>
             </div>
             </div>
         </div>
-        
-     </div> 
+
+     </div>
     </div>
     <div class="container about, section"  id="sectionAbout">
       <div class="composant">
@@ -104,7 +104,9 @@
           <div class="window2Tail1"></div>
           <div class="window2Tail2"></div>
           <div class="window2Tail3"></div>
-          <p class="textAbout">This website has been done in an educational context, for the “Grand Ecole” course from the HETIC school. We didn’t ask for the permission to use the contents and data from Nintendo. Thus, this website will not be exploited in any commercial way.</p>
+          <p class="textAbout">The Pokémons from the 8th generation have missing informations, that's because some of the APIs used are not totally up ta date.
+            <br><br><br><br>
+            This website has been done in an educational context, for the “Grand Ecole” course from the HETIC school. We didn’t ask for the permission to use the contents and data from Nintendo. Thus, this website will not be exploited in any commercial way.</p>
         </div>
         <div class="textContainer2">
           <div class="window2Tails"></div>

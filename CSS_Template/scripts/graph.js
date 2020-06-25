@@ -35,6 +35,13 @@ const pokeItemName4 = document.querySelector('.item4').innerHTML
 
 
 
+const pokeab1 = document.querySelector('.abone')
+pokeab1.innerHTML = pokeMoveName1 + ' ' + pokeMoveUse1
+const pokeab2 = document.querySelector('.abtwo')
+pokeab2.innerHTML = pokeMoveName2 + ' ' + pokeMoveUse2
+const pokeab3 = document.querySelector('.abthree')
+pokeab3.innerHTML = pokeMoveName3 + ' ' + pokeMoveUse3
+
 const ctxMoves = document.querySelector('.movesChart').getContext('2d');
 const movesChart = new Chart(ctxMoves, {
     type: 'horizontalBar',

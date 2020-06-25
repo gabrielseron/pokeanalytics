@@ -3,9 +3,15 @@
     include '../config.php';
     $pokemon = $_GET["pokemon"];
     $generation = 7;
+<<<<<<< HEAD
     $tier = 'ubers';
     
     
+=======
+    $tier = 'ou';
+
+
+>>>>>>> 1a065ecb0fc02747508bdd247a3469d8a4dffa2f
     $pokeapi = 'https://pokeapi.co/api/v2/pokemon/'.$pokemon.'';
     $pokeapiData = @file_get_contents($pokeapi);
     $pokeapiData = json_decode($pokeapiData);
@@ -39,6 +45,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
 </head>
 <body class="container">
   <div id="nav">
@@ -46,7 +53,11 @@
   <nav>
       <div class="topFix">
         <div class="rightCubenav">
+<<<<<<< HEAD
         <img src="<?php echo $pokeIco ;?>" alt="shuffle">
+=======
+        <img src="<?php echo $pokeIco;?>" alt="">
+>>>>>>> 1a065ecb0fc02747508bdd247a3469d8a4dffa2f
         </div>
         <div class="rightCubenavOne"></div>
         <div class="rightCubenavThree"></div>
@@ -58,7 +69,7 @@
       </div>
    </nav>
         <div id="footer">
-          <div class="botnav">  
+          <div class="botnav">
             <div class="cubebotnav"></div>
             <div class="cubebotnavOne"></div>
             <img src="./images/logo.png" alt="logo">
@@ -77,7 +88,11 @@
           <div class="cubenav infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavOne"></div>
           <div class="cubenavTwo">
+<<<<<<< HEAD
             <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
+=======
+          <img src="<?php echo $pokeapiData->sprites->front_default;?>" alt="pokeIcon" class="sprite">
+>>>>>>> 1a065ecb0fc02747508bdd247a3469d8a4dffa2f
           </div>
           <div class="cubenavThree infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavFour"></div>
@@ -86,33 +101,34 @@
           <div class="cubenavSeven"></div>
           <div class="titlemove">
             <ul class="menutitle titleuber">
-              <li class="titlevalue infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><h2>Togekiss</h2></li>
+              <li class="titlevalue infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><h2><?php echo ucfirst($pokemon) ;?></h2></li>
               <li class="titlevalue"><h2>UBER</h2></li>
             </ul>
             <ul class="type">
-              <li class="valuetiny"><p>Fairy</p></li>
-              <li class="valuetiny tinyone"><p>Flying</p></li>
-              <li class="valuetiny"><p>N°1</p></li>
-              <li class="valuetiny"><p>41.22%</p></li>
+            <?php foreach($pokeapiData->types as $_type): ?>
+              <li class="valuetiny"><p><?php echo ucfirst($_type->type->name) ;?></p></li>
+              <?php endforeach ;?>
+              <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
+              <li class="valuetiny"><p><?php echo $smogonData->usage ;?></p></li>
             </ul>
           </div>
           <div class="talents">
             <div class="ribbonone">
               <ul class="menu open translatone infos">
                 <li class="ribbon"><img src="images/Ribbon3.png" class="ribbon" alt=""></li>
-                <li class="value infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><p>90% Serene Grace</p></li>
+                <li class="value infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><p class="abone">none</p></li>
               </ul>
             </div>
             <div class="ribbontwo">
               <ul class="menu open translatsec">
                 <li class="ribbon"><img src="images/Ribbon2.png" class="ribbon" alt=""></li>
-                <li class="value"><p>40% Super Luck</p></li>
-              </ul> 
+                <li class="value"><p class="abtwo">none</p></li>
+              </ul>
             </div>
             <div class="ribbonthree">
               <ul class="menu open">
                 <li class="ribbon"><img src="images/Ribbon1.png" class="ribbon" alt=""></li>
-                <li class="value"><p>10% Hustle</p></li>
+                <li class="value"><p class="abthree">none</p></li>
               </ul>
             </div>
           </div>
@@ -141,15 +157,15 @@
         </div>
       </div>
     <div class="container more, section">
-    
+
     </div>
     <footer class="footer" >
       <div class="footerCenter">
-        <img src="./images/logo.png" class="footer_logo" alt="">
+        <a href="home.php"><img src="./images/logo.png" class="footer_logo" alt=""></a>
         <span class="footer_contact">
           <a href="#sectionAbout">About</a>
         </span>
-      </div> 
+      </div>
     </footer>
     <div class="container items, section">
 
@@ -182,7 +198,7 @@
             <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
             <h3 class="name">Name : <?php echo ucfirst($pokemon) ;?></h3>
             <h4 class="id">Id : <?php echo $pokeId ;?></h4>
-    
+
             <?php $typeCount = 0 ;?>
             <?php foreach($pokeapiData->types as $_type): ?>
                 <?php $typeCount++ ;?>
@@ -208,7 +224,7 @@
         </div>
 
         <div class="part1">
-        
+
             <?php foreach($pokeapiData->stats as $_stat): ?>
 
                 <h4 class="<?php echo $_stat->stat->name?>"><?php echo $_stat->base_stat ;?></h4>
@@ -227,7 +243,7 @@
         </div>
 
         <div class="part2">
-        
+
             <?php $itemCount = 0 ;?>
             <?php foreach($smogonData->items as $key => $_item): ?>
                 <?php $itemCount++ ;?>
@@ -235,11 +251,11 @@
                 <h4 class="item<?php echo $itemCount ;?>Use"><?php echo $_item ;?></h4>
 
 
-                <?php 
+                <?php
                     $key = preg_replace('~[^\pL\d]+~u', '-', $key);
                     $key = strtolower($key);
 
-                    switch ($key) 
+                    switch ($key)
                     {
                         case 'buginium-z':
                             $key = $key . '--bag';
@@ -294,11 +310,11 @@
                             break;
                         case 'waterium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'aloraichium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'decidium-z':
                             $key = $key . '--bag';
@@ -310,31 +326,31 @@
 
                         case 'incinium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'kommonium-z':
                             $key = $key . '--bag';
                             break;
-                            
+
                         case 'lunalium-z':
                             $key = $key . '--bag';
                             break;
 
                         case 'lycanium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'marshadium-z':
                             $key = $key . '--bag';
                             break;
-                            
+
                         case 'mewnium-z':
                             $key = $key . '--bag';
                             break;
 
                         case 'mimikium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'pikanium-z':
                             $key = $key . '--bag';
@@ -346,19 +362,19 @@
 
                         case 'primarium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'snorlium-z':
                             $key = $key . '--bag';
                             break;
-                            
+
                         case 'solganium-z':
                             $key = $key . '--bag';
                             break;
 
                         case 'tapunium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'ultranecrozium-z':
                             $key = $key . '--bag';
@@ -400,7 +416,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <script src="./scripts/graph.js"></script>
-  
+
 
   <script>
     new fullpage('#fullPage', {
