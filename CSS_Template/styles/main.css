@@ -49,7 +49,7 @@ body {
 
 @keyframes scroll{
   100%{
-    background-position: 3000px 3000px;
+    background-position: 3000px 0px;
   }
 }
 
@@ -639,7 +639,7 @@ font-family: "CorporativeBlack" !important;
 
 .text2Container, .text2Container2
 {
-  margin-top: -8vh;
+  margin-top: 9vh;
   height: 60vh;
 }
 
