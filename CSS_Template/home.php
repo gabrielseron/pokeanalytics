@@ -16,9 +16,9 @@
     <ul class="menu">
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
-        <form autocomplete="off" action="./pokemon.php">
+        <form autocomplete="off" action="./Pokemon.php">
           <div class="autocomplete">
-            <input id="myInput" type="text" name="pokemon" placeholder="Search" required>
+            <input id="myInput" type="text" name="Pokemon" placeholder="Search" required>
             <div class="tails"></div>
             <div class="tail1"></div>
             <div class="tail2"></div>
@@ -74,19 +74,19 @@
             <div class="window2Tail2"></div>
             <div class="window2Tail3"></div>
             <div class="top1">
-            <img src="../header/images/togekiss1.png" alt="Togekiss">
+            <img src="./images/togekiss1.png" alt="Togekiss">
             <div class="top1name"><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=togekiss" style="color:white;"><h2>Togekiss</h2></a><h2>N°1</h2> 
             <div class="percentage">41.22% Pick rate</div>
             </div>
             </div>
             <div class="top2">
-            <img src="../header/images/tyranitar.png" alt="Tyranitar">
+            <img src="./images/tyranitar.png" alt="Tyranitar">
             <div class="top1name"><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=tyranitar" style="color:white;"><h2>Tyranitar</h2></a><h2>N°2</h2> 
             <div class="percentage">35.84% Pick rate</div>
             </div>
             </div>
             <div class="top3">
-            <img src="../header/images/dragapult.png" alt="Dragapult">
+            <img src="./images/dragapult.png" alt="Dragapult">
             <div class="top1name"><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=dragapult" style="color:white;"><h2>Dragapult</h2></a><h2>N°3</h2> 
             <div class="percentage">35.57% Pick rate</div>
             </div>
