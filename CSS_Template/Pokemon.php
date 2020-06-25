@@ -1,4 +1,4 @@
-  <?php
+<?php
 
     include '../config.php';
     $pokemon = $_GET["pokemon"];
@@ -94,26 +94,26 @@
               <li class="valuetiny"><p><?php echo ucfirst($_type->type->name) ;?></p></li>
               <?php endforeach ;?>
               <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
-              <li class="valuetiny"><p><?php echo $smogonData->usage ;?>%</p></li>
+              <li class="valuetiny"><p><?php echo $smogonData->usage ;?></p></li>
             </ul>
           </div>
           <div class="talents">
             <div class="ribbonone">
               <ul class="menu open translatone infos">
                 <li class="ribbon"><img src="images/Ribbon3.png" class="ribbon" alt=""></li>
-                <li class="value infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><p>90% Serene Grace</p></li>
+                <li class="value infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span><p class="abone">none</p></li>
               </ul>
             </div>
             <div class="ribbontwo">
               <ul class="menu open translatsec">
                 <li class="ribbon"><img src="images/Ribbon2.png" class="ribbon" alt=""></li>
-                <li class="value"><p>40% Super Luck</p></li>
+                <li class="value"><p class="abtwo">none</p></li>
               </ul>
             </div>
             <div class="ribbonthree">
               <ul class="menu open">
                 <li class="ribbon"><img src="images/Ribbon1.png" class="ribbon" alt=""></li>
-                <li class="value"><p>10% Hustle</p></li>
+                <li class="value"><p class="abthree">none</p></li>
               </ul>
             </div>
           </div>

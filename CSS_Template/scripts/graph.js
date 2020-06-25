@@ -24,6 +24,13 @@ const pokeMoveUse6 = document.querySelector('.move6Use').innerHTML
 const pokeMoveUse7 = document.querySelector('.move7Use').innerHTML
 const pokeMoveUse8 = document.querySelector('.move8Use').innerHTML
 
+const pokeab1 = document.querySelector('.abone')
+pokeab1.innerHTML = pokeMoveName1 + ' ' + pokeMoveUse1
+const pokeab2 = document.querySelector('.abtwo')
+pokeab2.innerHTML = pokeMoveName2 + ' ' + pokeMoveUse2
+const pokeab3 = document.querySelector('.abthree')
+pokeab3.innerHTML = pokeMoveName3 + ' ' + pokeMoveUse3
+
 const ctxMoves = document.querySelector('.movesChart').getContext('2d');
 const movesChart = new Chart(ctxMoves, {
     type: 'horizontalBar',
