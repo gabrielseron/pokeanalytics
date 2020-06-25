@@ -6,37 +6,122 @@ const pokeSpAtk = document.querySelector('.special-attack').innerHTML
 const pokeSpDef = document.querySelector('.special-defense').innerHTML
 const pokeSpeed = document.querySelector('.speed').innerHTML
 
-const pokeMoveName1 = document.querySelector('.move1').innerHTML
-const pokeMoveName2 = document.querySelector('.move2').innerHTML
-const pokeMoveName3 = document.querySelector('.move3').innerHTML
-const pokeMoveName4 = document.querySelector('.move4').innerHTML
-const pokeMoveName5 = document.querySelector('.move5').innerHTML
-const pokeMoveName6 = document.querySelector('.move6').innerHTML
-const pokeMoveName7 = document.querySelector('.move7').innerHTML
-const pokeMoveName8 = document.querySelector('.move8').innerHTML
-const pokeMoveName9 = document.querySelector('.move9').innerHTML
-const pokeMoveName10 = document.querySelector('.move10').innerHTML
+if (document.querySelector('.move1')) {
+    var pokeMoveName1 = document.querySelector('.move1').innerHTML
+var pokeMoveUse1 = document.querySelector('.move1Use').innerHTML
+} else {
+    var pokeMoveName1 = "null"
+    var pokeMoveUse1 = "null"
+}
 
-const pokeMoveUse1 = document.querySelector('.move1Use').innerHTML
-const pokeMoveUse2 = document.querySelector('.move2Use').innerHTML
-const pokeMoveUse3 = document.querySelector('.move3Use').innerHTML
-const pokeMoveUse4 = document.querySelector('.move4Use').innerHTML
-const pokeMoveUse5 = document.querySelector('.move5Use').innerHTML
-const pokeMoveUse6 = document.querySelector('.move6Use').innerHTML
-const pokeMoveUse7 = document.querySelector('.move7Use').innerHTML
-const pokeMoveUse8 = document.querySelector('.move8Use').innerHTML
-const pokeMoveUse9 = document.querySelector('.move9Use').innerHTML
-const pokeMoveUse10 = document.querySelector('.move10Use').innerHTML
+if (document.querySelector('.move2')) {
+    var pokeMoveName2 = document.querySelector('.move2').innerHTML
+var pokeMoveUse2 = document.querySelector('.move2Use').innerHTML
+} else {
+    var pokeMoveName2 = "null"
+    var pokeMoveUse2 = "null"
+}
 
-const pokeItemName1 = document.querySelector('.item1').innerHTML
-const pokeItemName2 = document.querySelector('.item2').innerHTML
-const pokeItemName3 = document.querySelector('.item3').innerHTML
-const pokeItemName4 = document.querySelector('.item4').innerHTML
+if (document.querySelector('.move3')) {
+    var pokeMoveName3 = document.querySelector('.move3').innerHTML
+var pokeMoveUse3 = document.querySelector('.move3Use').innerHTML
+} else {
+    var pokeMoveName3 = "null"
+    var pokeMoveUse3 = "null"
+}
 
-const pokeItemUse1 = document.querySelector('.item1Use').innerHTML
-const pokeItemUse2 = document.querySelector('.item2Use').innerHTML
-const pokeItemUse3 = document.querySelector('.item3Use').innerHTML
-const pokeItemUse4 = document.querySelector('.item4Use').innerHTML
+if (document.querySelector('.move4')) {
+    var pokeMoveName4 = document.querySelector('.move4').innerHTML
+var pokeMoveUse4 = document.querySelector('.move4Use').innerHTML
+} else {
+    var pokeMoveName4 = "null"
+    var pokeMoveUse4 = "null"
+}
+
+if (document.querySelector('.move5')) {
+    var pokeMoveName5 = document.querySelector('.move5').innerHTML
+var pokeMoveUse5 = document.querySelector('.move5Use').innerHTML
+} else {
+    var pokeMoveName5 = "null"
+    var pokeMoveUse5 = "null"
+}
+
+if (document.querySelector('.move6')) {
+    var pokeMoveName6 = document.querySelector('.move6').innerHTML
+var pokeMoveUse6 = document.querySelector('.move6Use').innerHTML
+} else {
+    var pokeMoveName6 = "null"
+    var pokeMoveUse6 = "null"
+}
+
+if (document.querySelector('.move7')) {
+    var pokeMoveName7 = document.querySelector('.move7').innerHTML
+var pokeMoveUse7 = document.querySelector('.move7Use').innerHTML
+} else {
+    var pokeMoveName7 = "null"
+    var pokeMoveUse7 = "null"
+}
+
+if (document.querySelector('.move8')) {
+    var pokeMoveName8 = document.querySelector('.move8').innerHTML
+var pokeMoveUse8 = document.querySelector('.move8Use').innerHTML
+} else {
+    var pokeMoveName8 = "null"
+    var pokeMoveUse8 = "null"
+}
+
+if (document.querySelector('.move9')) {
+    var pokeMoveName9 = document.querySelector('.move9').innerHTML
+var pokeMoveUse9 = document.querySelector('.move9Use').innerHTML
+} else {
+    var pokeMoveName9 = "null"
+    var pokeMoveUse9 = "null"
+}
+
+if (document.querySelector('.move10')) {
+    var pokeMoveName10 = document.querySelector('.move10').innerHTML
+var pokeMoveUse10 = document.querySelector('.move10Use').innerHTML
+} else {
+    var pokeMoveName10 = "null"
+    var pokeMoveUse10 = "null"
+}
+
+
+if (document.querySelector('.item1')) {
+    var pokeItemName1 = document.querySelector('.item1').innerHTML
+    var pokeItemUse1 = document.querySelector('.item1Use').innerHTML
+    
+}else{
+    var pokeItemName1 = "None"
+    var pokeItemUse1 = "None"
+}
+
+if (document.querySelector('.item2')) {
+    var pokeItemName2 = document.querySelector('.item2').innerHTML
+    var pokeItemUse2 = document.querySelector('.item2Use').innerHTML
+    
+}else{
+    var pokeItemName2 = "None"
+    var pokeItemUse2 = "None"
+}
+
+if (document.querySelector('.item3')) {
+    var pokeItemName3 = document.querySelector('.item3').innerHTML
+    var pokeItemUse3 = document.querySelector('.item3Use').innerHTML
+}else{
+    var pokeItemName3 = "None"
+    var pokeItemUse3 = "None"
+}
+
+if (document.querySelector('.item4')) {
+    var pokeItemName4 = document.querySelector('.item4').innerHTML
+    var pokeItemUse4 = document.querySelector('.item4Use').innerHTML
+    
+}else{
+    var pokeItemName4 = "None"
+    var pokeItemUse4 = "None"
+}
+
 
 
 
@@ -44,13 +129,13 @@ const pokeAbility1 = document.querySelector('.ability1').innerHTML
 const pokeab1 = document.querySelector('.abone')
 pokeab1.innerHTML = pokeAbility1
 
-if (document.querySelector('.ability2').innerHTML != null) {
+if (document.querySelector('.ability2')) {
     const pokeAbility2 = document.querySelector('.ability2').innerHTML
     const pokeab2 = document.querySelector('.abtwo')
     pokeab2.innerHTML = pokeAbility2
 }
 
-if (document.querySelector('.ability3').innerHTML) {
+if (document.querySelector('.ability3')) {
     const pokeAbility3 = document.querySelector('.ability3').innerHTML
     const pokeab3 = document.querySelector('.abthree')
     pokeab3.innerHTML = pokeAbility3

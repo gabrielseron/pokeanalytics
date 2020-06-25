@@ -3,7 +3,7 @@
     include '../config.php';
     $pokemon = $_GET["pokemon"];
     $generation = 7;
-    $tier = 'ubers';
+    $tier = 'ou';
     
     
     $pokeapi = 'https://pokeapi.co/api/v2/pokemon/'.$pokemon.'';
