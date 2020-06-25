@@ -96,10 +96,16 @@
             </ul>
             <ul class="type">
               <?php foreach($pokeapiData->types as $_type): ?>
+                <div class="infos"><span class="infosTooltip"><h3>Type</h3></span>
               <li class="valuetiny"><p><?php echo ucfirst($_type->type->name) ;?></p></li>
+              </div>
               <?php endforeach ;?>
+              <div class="infos"><span class="infosTooltip"><h3>Usage rank</h3></span>
               <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
+              </div>
+              <div class="infos"><span class="infosTooltip"><h3>Usage percentage</h3></span>
               <li class="valuetiny"><p><?php echo $smogonData->usage ;?></p></li>
+              </div>
             </ul>
           </div>
           <div class="talents">
@@ -183,7 +189,7 @@
         </span>
       </div>
     </footer>
-    <div class="container more, section">
+    <div class="container teammates, section">
 
   </div>
   <div class="hidden">
@@ -414,7 +420,7 @@
     new fullpage('#fullPage', {
       autoScrolling: true,
       navigation: true,
-      navigationTooltips: ["Stats & Moves", "items & EV", "More"],
+      navigationTooltips: ["Stats & Moves", "items & EV", "Teammates (WIP)"],
       showActiveTooltip: false
     })
   </script>
