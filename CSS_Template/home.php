@@ -86,8 +86,8 @@
             </div>
             </div>
             <div class="top3">
-            <img src="./images/dragapult.png" alt="Dragapult">
-            <div class="top1name"><a href="pokemon.php?pokemon=dragapult" style="color:white;"><h2>Dragapult</h2></a><h2>N°3</h2>
+            <img src="./images/dusclops.png" alt="Dragapult">
+            <div class="top1name"><a href="pokemon.php?pokemon=dusclops" style="color:white;"><h2>Dusclops</h2></a><h2>N°3</h2>
             <div class="percentage">35.57% Pick rate</div>
             </div>
             </div>

@@ -1,4 +1,4 @@
-<?php
+  <?php
 
     include '../config.php';
     $pokemon = $_GET["pokemon"];
