@@ -220,9 +220,9 @@ font-family: "CorporativeBlack" !important;
 .cubenavTwo img{
   transform: skew(-30deg);
   margin-left: 170px;
-  margin-top: -0.5vw;
-  width: 150px;
-  height: auto;
+  margin-top: -0.5vh;
+  width: auto;
+  height: 13vh;
 }
 
 .cubenavThree{
@@ -243,7 +243,7 @@ font-family: "CorporativeBlack" !important;
   width: 20vw;
   height: 2vh;
   margin-left: 300px;
-  margin-top: 11.7vh;
+  margin-top: 11.75vh;
   background-color: #6699FF;
   z-index: 5;
 }
@@ -646,7 +646,7 @@ font-family: "CorporativeBlack" !important;
 .windowTailStart
 {
   position: absolute;
-  margin-top: -250px;
+  margin-top: -45px;
   margin-left: -6px;;
   width: 400px;
   height: 44px;
@@ -658,7 +658,7 @@ font-family: "CorporativeBlack" !important;
 .welcome
 {
   position: absolute;
-  margin-top: -245px;
+  margin-top: -40px;
   margin-left: 10px;
   z-index: 5;
   color: white;
@@ -667,7 +667,7 @@ font-family: "CorporativeBlack" !important;
 .windowTails
 {
   position: absolute;
-  margin-top: -250px;
+  margin-top: -45px;
   margin-left: 110px;;
   width: 400px;
   height: 44px;
@@ -679,7 +679,7 @@ font-family: "CorporativeBlack" !important;
 .windowTail1, .windowTail2, .windowTail3
 {
   position: absolute;
-  margin-top: -243px;
+  margin-top: -38px;
   margin-left: 407px;;
   width: 25px;
   height: 30px;
@@ -793,7 +793,7 @@ font-family: "CorporativeBlack" !important;
 
 
 h3 {
-  transform: skew(-30deg) translateY(-15px)
+  transform: skew(-30deg) translateY(-20px)
 }
 
 .infosTooltip {
@@ -807,9 +807,9 @@ h3 {
   position: fixed;
   z-index: 1000;
   width:200px;
-  height:20px;
+  height:15px;
   transform: skew(30deg);
-  font-size: 12px;
+  font-size: 14px;
   transform: translateX(0) translateY(0);
 }
 
