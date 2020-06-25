@@ -906,3 +906,10 @@ function autocomplete(inp, arr) {
   }
 
   autocomplete(document.getElementById("myInput"), nameList);
+
+
+  document.querySelector('#myInput').addEventListener("keydown", event => {
+    if (event.keyCode == 13) {
+      document.querySelector('.button').click()
+      }
+})
