@@ -311,7 +311,7 @@ button span
 .windowTailStart
 {
   position: absolute;
-  margin-top: -458px;
+  margin-top: -482px;
   margin-left: -6px;;
   width: 400px;
   height: 44px;
@@ -323,7 +323,7 @@ button span
 .welcome
 {
   position: absolute;
-  margin-top: -453px;
+  margin-top: -475px;
   margin-left: 10px;
   z-index: 5;
   color: white;
@@ -332,7 +332,7 @@ button span
 .windowTails
 {
   position: absolute;
-  margin-top: -458px;
+  margin-top: -482px;
   margin-left: 110px;;
   width: 400px;
   height: 44px;
@@ -344,7 +344,7 @@ button span
 .windowTail1, .windowTail2, .windowTail3
 {
   position: absolute;
-  margin-top: -451px;
+  margin-top: -475px;
   margin-left: 407px;;
   width: 25px;
   height: 30px;
