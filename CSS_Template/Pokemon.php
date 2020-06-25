@@ -45,7 +45,7 @@
   <nav>
       <div class="topFix">
         <div class="rightCubenav">
-            <img src="./images/togekiss2.png" alt="togekiss">
+        <img src="<?php echo $pokeIco ;?>" alt="">
         </div>
         <div class="rightCubenavOne"></div>
         <div class="rightCubenavThree"></div>
@@ -76,7 +76,7 @@
           <div class="cubenav infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavOne"></div>
           <div class="cubenavTwo">
-            <img src="./images/togekiss1.png" alt="togekiss">
+          <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
           </div>
           <div class="cubenavThree infos"><span class="infosTooltip"><h3>Affronte les arabes</h3></span></div>
           <div class="cubenavFour"></div>

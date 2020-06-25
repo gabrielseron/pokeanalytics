@@ -98,14 +98,13 @@
     <div class="container about, section"  id="sectionAbout">
       <div class="composant">
         <div class="textContainer">
-          <img class="logo" src="./images/logo.png" class="footer_logo" alt="">
-          <p class="homeText">The N°1 reference for Pokémon statistics</p>
-          <div class="windowTails"></div>
-          <div class="windowTailStart"></div>
-          <h2 class="welcome">Disclaimer</h2>
-          <div class="windowTail1"></div>
-          <div class="windowTail2"></div>
-          <div class="windowTail3"></div>
+          <div class="window2Tails"></div>
+          <div class="window2TailStart"></div>
+          <h2 class="randomPokemon">Disclaimer</h2>
+          <div class="window2Tail1"></div>
+          <div class="window2Tail2"></div>
+          <div class="window2Tail3"></div>
+          <p class="textAbout">This website has been done in an educational context, for the “Grand Ecole” course from the HETIC school. We didn’t ask for the permission to use the contents and data from Nintendo. Thus, this website will not be exploited in any commercial way.</p>
         </div>
         <div class="textContainer2">
           <div class="window2Tails"></div>
@@ -114,6 +113,18 @@
           <div class="window2Tail1"></div>
           <div class="window2Tail2"></div>
           <div class="window2Tail3"></div>
+          <p class="textAbout">This website is using the data from pokéApi.co and smogon-usage-stats.herokuapp.com.
+            <br><br>
+            It has been designed and developped by a group of frenchs College students.
+            <br><br><br><br>
+            Contact : <br>
+            <span class="tabulation"></span> developer : <span class="tabulation"></span>gabriel.seron@hetic.net<br>
+            <span class="tabulation"></span> developer : <span class="tabulation"></span>edouard.eisenfisz@hetic.net<br>
+            <span class="tabulation"></span> developer : <span class="tabulation"></span>valentin.sejourne@hetic.net<br>
+            <span class="tabulation"></span> developer-designer : <span class="tabulation3"></span>henri.paulus@hetic.net<br>
+            <span class="tabulation"></span> designer : <span class="tabulation2"></span>florian.rouvier@hetic.net<br>
+            <span class="tabulation"></span> designer-developer : <span class="tabulation3"></span>killian.flohic@hetic.net<br>
+          </p>
         </div>
       </div>
     </div>
