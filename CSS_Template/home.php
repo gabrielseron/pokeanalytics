@@ -16,9 +16,9 @@
     <ul class="menu">
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
-        <form autocomplete="off" action="./pokemon.php">
+        <form autocomplete="off" action="./Pokemon.php">
           <div class="autocomplete">
-            <input id="myInput" type="text" name="pokemon" placeholder="Search" required>
+            <input id="myInput" type="text" name="Pokemon" placeholder="Search" required>
             <div class="tails"></div>
             <div class="tail1"></div>
             <div class="tail2"></div>
@@ -80,7 +80,7 @@
             </div>
             </div>
             <div class="top2">
-            <img src="../header/images/tyranitar.png" alt="Tyranitar">
+            <img src="./images/tyranitar.png" alt="Tyranitar">
             <div class="top1name"><a href="http://localhost/pokeanalytics/CSS_Template/pokemon.php?pokemon=tyranitar" style="color:white;"><h2>Tyranitar</h2></a><h2>N°2</h2> 
             <div class="percentage">35.84% Pick rate</div>
             </div>
@@ -104,7 +104,9 @@
           <div class="window2Tail1"></div>
           <div class="window2Tail2"></div>
           <div class="window2Tail3"></div>
-          <p class="textAbout">This website has been done in an educational context, for the “Grand Ecole” course from the HETIC school. We didn’t ask for the permission to use the contents and data from Nintendo. Thus, this website will not be exploited in any commercial way.</p>
+          <p class="textAbout">The Pokémons from the 8th generation have missing informations, that's because some of the APIs used are not totally up ta date.
+            <br><br><br><br>
+            This website has been done in an educational context, for the “Grand Ecole” course from the HETIC school. We didn’t ask for the permission to use the contents and data from Nintendo. Thus, this website will not be exploited in any commercial way.</p>
         </div>
         <div class="textContainer2">
           <div class="window2Tails"></div>
