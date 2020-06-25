@@ -14,9 +14,9 @@ body {
   animation:100s scroll infinite linear;
 }
 
-.hidden{
+/* .hidden{
   display: none;
-}
+} */
 
 @font-face {
   font-family: 'CorporativeBlack';
@@ -807,8 +807,4 @@ h3 {
   width:200px;
   height:20px;
   transform: skew(30deg)
-}
-
-.hidden{
-  display: none;
 }

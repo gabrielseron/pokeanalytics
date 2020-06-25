@@ -97,7 +97,15 @@ const statsChart = new Chart(ctxStats, {
             }
         },
         legend: {
-            display: false,
+            display: false
+        },
+        scale: {
+            angleLines: {
+                display: false
+            },
+            ticks: {
+                suggestedMin: 5
+            }
         }
     }
 });
