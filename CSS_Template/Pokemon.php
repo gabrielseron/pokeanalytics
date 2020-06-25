@@ -181,7 +181,7 @@
       <div class="footerCenter">
         <a href="home.php"><img src="./images/logo.png" class="footer_logo" alt=""></a>
         <span class="footer_contact">
-          <a href="#sectionAbout">About</a>
+          <a href="./home.php#sectionAbout">About</a>
         </span>
       </div>
     </footer>

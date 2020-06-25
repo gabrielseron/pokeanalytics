@@ -35,7 +35,7 @@
     <footer class="footer" >
       <img src="./images/logo.png" class="footer_logo" alt="">
       <span class="footer_contact">
-        <a href="#sectionAbout">About</a>
+        <a href="home.php#sectionAbout">About</a>
       </span>
     </footer>
     </div>
