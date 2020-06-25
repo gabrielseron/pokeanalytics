@@ -460,12 +460,17 @@ button span
 
 .tabulation2{
   display: inline-block;
-  width: 6.5vw;
+  width: 7.7vw;
 }
 
 .tabulation3{
   display: inline-block;
   width: 2.5vw;
+}
+
+.tabulation4{
+  display: inline-block;
+  width: 6.9vw;
 }
 
 .arrow-circle-down {

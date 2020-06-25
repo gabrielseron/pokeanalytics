@@ -140,10 +140,10 @@
             <br><br><br><br>
             Contact : <br>
             <span class="tabulation"></span> back-end developer :<span class="tabulation3"></span>gabriel.seron@hetic.net<br>
-            <span class="tabulation"></span> developer : <span class="tabulation"></span>edouard.eisenfisz@hetic.net<br>
-            <span class="tabulation"></span> developer : <span class="tabulation"></span>valentin.sejourne@hetic.net<br>
+            <span class="tabulation"></span> developer : <span class="tabulation4"></span>edouard.eisenfisz@hetic.net<br>
+            <span class="tabulation"></span> developer : <span class="tabulation4"></span>valentin.sejourne@hetic.net<br>
             <span class="tabulation"></span> developer-designer : <span class="tabulation3"></span>henri.paulus@hetic.net<br>
-            <span class="tabulation"></span> designer : <span class="tabulation2"></span>florian.rouvier@hetic.net<br>
+            <span class="tabulation"></span> designer :<span class="tabulation2"></span>florian.rouvier@hetic.net<br>
             <span class="tabulation"></span> designer-developer : <span class="tabulation3"></span>killian.flohic@hetic.net<br>
           </p>
         </div>
