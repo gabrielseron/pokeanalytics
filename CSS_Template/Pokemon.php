@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+  <link rel="icon" href="<?php echo $pokeIco ;?>" type="image/favicon">
 </head>
 <body class="container">
   <div id="nav">
@@ -96,10 +96,20 @@
             </ul>
             <ul class="type">
               <?php foreach($pokeapiData->types as $_type): ?>
+                <div class="infos"><span class="infosTooltip"><h3>Type</h3></span>
               <li class="valuetiny"><p><?php echo ucfirst($_type->type->name) ;?></p></li>
+              </div>
               <?php endforeach ;?>
+              <div class="infos"><span class="infosTooltip"><h3>Usage rank</h3></span>
               <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
+<<<<<<< HEAD
               <li class="valuetiny"><p><?php echo round($smogonData->usage) ;?></p></li>
+=======
+              </div>
+              <div class="infos"><span class="infosTooltip"><h3>Usage percentage</h3></span>
+              <li class="valuetiny"><p><?php echo $smogonData->usage ;?></p></li>
+              </div>
+>>>>>>> d1c5c24a1937d39a44e8bf0932c2deebe40029af
             </ul>
           </div>
           <div class="talents">
@@ -183,7 +193,7 @@
         </span>
       </div>
     </footer>
-    <div class="container more, section">
+    <div class="container teammates, section">
 
   </div>
   <div class="hidden">
@@ -209,8 +219,7 @@
                 <?php $abilityCount = 0 ;?>
             <?php foreach($smogonData->abilities as $key => $_ability): ?>
                 <?php $abilityCount++ ;?>
-                <h4 class="abilityUse<?php echo $abilityCount ;?>">Use : <?php echo $_ability ;?></h4>
-                <h4 class="ability<?php echo $abilityCount ;?>">Ability : <?php echo $key ;?></h4>
+                <h4 class="ability<?php echo $abilityCount ;?>"><?php echo $key . $ability ;?></h4>
 
             <?php endforeach ;?>
             <br>
@@ -415,7 +424,7 @@
     new fullpage('#fullPage', {
       autoScrolling: true,
       navigation: true,
-      navigationTooltips: ["Stats & Moves", "items & EV", "More"],
+      navigationTooltips: ["Stats & Moves", "items & EV", "Teammates (WIP)"],
       showActiveTooltip: false
     })
   </script>
