@@ -68,9 +68,10 @@
         <div class="window2Tail1"></div>
         <div class="window2Tail2"></div>
         <div class="window2Tail3"></div>
-        <div class="topWeek">
+        <a href="pokemon.php?pokemon=dialga"><div class="topWeek">
         <img src="images/483.png" alt="Dialga" style="width:209px;">
-        <a href="pokemon.php?pokemon=dialga"><h2 style="color:white;">Dialga</h2></a>
+        <h2 style="color:white;">Dialga</h2>
+        </a>
         <div class="typeCase"><p style="transform:skew(-30deg);margin-top:2px;">Steel</p></div>
         <div class="typeCase2"><p style="transform:skew(-30deg);margin-top:2px;">Dragon</p></div>
         <h2 style="color:white;margin-top:-40px;">N°40 - UBER</h2>
