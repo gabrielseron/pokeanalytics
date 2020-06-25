@@ -16,7 +16,7 @@
     <ul class="menu">
       <li class="logo_nav"><img src="./images/logo.png" class="logo_nav my-button" alt=""></li>
       <li class="searchInput">
-        <form autocomplete="off" action="./Pokemon.php">
+        <form autocomplete="off" action="./pokemon.php">
           <div class="autocomplete">
             <input id="myInput" type="text" name="pokemon" placeholder="Search" required>
             <div class="tails"></div>

@@ -420,6 +420,5 @@
       showActiveTooltip: false
     })
   </script>
-
 </body>
 </html
