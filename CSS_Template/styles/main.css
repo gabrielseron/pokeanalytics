@@ -14,9 +14,9 @@ body {
   animation:100s scroll infinite linear;
 }
 
-.hidden{
+/* .hidden{
   display: none;
-}
+} */
 
 @font-face {
   font-family: 'CorporativeBlack';
@@ -220,7 +220,7 @@ font-family: "CorporativeBlack" !important;
 .cubenavTwo img{
   transform: skew(-30deg);
   margin-left: 170px;
-  margin-top: 0.5vw;
+  margin-top: -0.5vw;
   width: 150px;
   height: auto;
 }
@@ -448,10 +448,6 @@ font-family: "CorporativeBlack" !important;
   margin-left: 10%;
   margin-top: 3.7%;
   transform: rotate(-90deg);
-}
-
-.menu {
-  
 }
 
 .menutitle{

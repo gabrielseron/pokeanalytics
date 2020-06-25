@@ -3,7 +3,7 @@
     include '../config.php';
     $pokemon = $_GET["pokemon"];
     $generation = 7;
-    $tier = 'ou';
+    $tier = 'ubers';
     
     
     $pokeapi = 'https://pokeapi.co/api/v2/pokemon/'.$pokemon.'';
@@ -15,10 +15,10 @@
     $smogonData = json_decode($smogonData);
 
     $pokeId = $pokeapiData->id;
-    if (strlen($pokeId) == 1) 
+    if (strlen($pokeId) == 1)
     {
         $pokeId = "00".$pokeId;
-    }elseif (strlen($pokeId) == 2) 
+    }elseif (strlen($pokeId) == 2)
     {
         $pokeId = "0".$pokeId;
     }
@@ -31,13 +31,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Poké Pro Strat</title>
+  <title><?php echo '[' . ucFirst($tier) . ' ' . 'Gen ' . $generation .'] ' . ucfirst($pokemon) ;?></title>
+  <link rel="icon" href="<?php echo $pokeIco ;?>" type="image/favicon">
   <meta name="description" content="Description de ma page pour les moteurs de recherche">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
 </head>
 <body class="container">
   <div id="nav">
@@ -45,7 +47,7 @@
   <nav>
       <div class="topFix">
         <div class="rightCubenav">
-            <img src="./images/togekiss2.png" alt="togekiss">
+        <img src="<?php echo $pokeIco;?>" alt="">
         </div>
         <div class="rightCubenavOne"></div>
         <div class="rightCubenavThree"></div>
@@ -57,7 +59,7 @@
       </div>
    </nav>
         <div id="footer">
-          <div class="botnav">  
+          <div class="botnav">
             <div class="cubebotnav"></div>
             <div class="cubebotnavOne"></div>
             <img src="./images/logo.png" alt="logo">
@@ -76,7 +78,7 @@
           <div class="cubenav">"</div>
           <div class="cubenavOne"></div>
           <div class="cubenavTwo">
-            <img src="./images/togekiss1.png" alt="togekiss">
+            <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
           </div>
           <div class="cubenavThree"></div>
           <div class="cubenavFour"></div>
@@ -86,17 +88,18 @@
           <div class="titlemove">
             <ul class="menutitle titleuber">
               <div class="infos"><span class="infosTooltip"><h3>Name</h3></span>
-              <li class="titlevalue"><h2>Togekiss</h2></li>
+              <li class="titlevalue"><h2><?php echo ucfirst($pokemon) ;?></h2></li>
               </div>
               <div class="infos"><span class="infosTooltip"><h3>Tier</h3></span>
               <li class="titlevalue"><h2>UBER</h2></li>
               </div>
             </ul>
             <ul class="type">
-              <li class="valuetiny"><p>Fairy</p></li>
-              <li class="valuetiny tinyone"><p>Flying</p></li>
-              <li class="valuetiny"><p>N°1</p></li>
-              <li class="valuetiny"><p>41.22%</p></li>
+              <?php foreach($pokeapiData->types as $_type): ?>
+              <li class="valuetiny"><p><?php echo ucfirst($_type->type->name) ;?></p></li>
+              <?php endforeach ;?>
+              <li class="valuetiny"><p>N°<?php echo $smogonData->rank ;?></p></li>
+              <li class="valuetiny"><p><?php echo $smogonData->usage ;?></p></li>
             </ul>
           </div>
           <div class="talents">
@@ -104,14 +107,14 @@
               <ul class="menu open translatone infos">
                 <li class="ribbon"><img src="images/Ribbon3.png" class="ribbon" alt=""></li>
                 <div class="infos"><span class="infosTooltip"><h3>Most used talent</h3></span>
-                <li class="value"><p>90% Serene Grace</p></li>
+                <li class="value"><p class="abone">none</p></li>
               </ul>
             </div>
             <div class="ribbontwo">
               <ul class="menu open translatsec">
                 <li class="ribbon"><img src="images/Ribbon2.png" class="ribbon" alt=""></li>
                 <div class="infos"><span class="infosTooltip"><h3>Second most used talent</h3></span>
-                <li class="value"><p>40% Super Luck</p></li>
+                <li class="value"><p class="abtwo">none</p></li>
                </div>
               </ul> 
             </div>
@@ -119,7 +122,7 @@
               <ul class="menu open">
                 <li class="ribbon"><img src="images/Ribbon1.png" class="ribbon" alt=""></li>
                 <div class="infos"><span class="infosTooltip"><h3>Third most used talent</h3></span>
-                <li class="value"><p>10% Hustle</p></li>
+                <li class="value"><p class="abthree">none</p></li>
                 </div>
               </ul>
             </div>
@@ -148,28 +151,27 @@
         </div>
       </div>
     <div class="container more, section">
-    
+
     </div>
     <footer class="footer" >
       <div class="footerCenter">
-        <img src="./images/logo.png" class="footer_logo" alt="">
+        <a href="home.php"><img src="./images/logo.png" class="footer_logo" alt=""></a>
         <span class="footer_contact">
           <a href="#sectionAbout">About</a>
         </span>
-      </div> 
+      </div>
     </footer>
     <div class="container items, section">
 
     <div class="composant">
         <div class="text2Container">
-          <img class="logo" src="./images/logo.png" class="footer_logo" alt="">
-          <p class="homeText">The N°1 reference for Pokémon statistics</p>
           <div class="windowTails"></div>
           <div class="windowTailStart"></div>
           <h2 class="welcome">Most held items</h2>
           <div class="windowTail1"></div>
           <div class="windowTail2"></div>
           <div class="windowTail3"></div>
+          <canvas class="itemsChart"></canvas>
         </div>
         <div class="text2Container2">
           <div class="window2Tails"></div>
@@ -190,7 +192,7 @@
             <img src="<?php echo $pokeapiData->sprites->front_default ;?>" alt="pokeIcon" class="sprite">
             <h3 class="name">Name : <?php echo ucfirst($pokemon) ;?></h3>
             <h4 class="id">Id : <?php echo $pokeId ;?></h4>
-    
+
             <?php $typeCount = 0 ;?>
             <?php foreach($pokeapiData->types as $_type): ?>
                 <?php $typeCount++ ;?>
@@ -216,7 +218,7 @@
         </div>
 
         <div class="part1">
-        
+
             <?php foreach($pokeapiData->stats as $_stat): ?>
 
                 <h4 class="<?php echo $_stat->stat->name?>"><?php echo $_stat->base_stat ;?></h4>
@@ -235,7 +237,7 @@
         </div>
 
         <div class="part2">
-        
+
             <?php $itemCount = 0 ;?>
             <?php foreach($smogonData->items as $key => $_item): ?>
                 <?php $itemCount++ ;?>
@@ -243,11 +245,11 @@
                 <h4 class="item<?php echo $itemCount ;?>Use"><?php echo $_item ;?></h4>
 
 
-                <?php 
+                <?php
                     $key = preg_replace('~[^\pL\d]+~u', '-', $key);
                     $key = strtolower($key);
 
-                    switch ($key) 
+                    switch ($key)
                     {
                         case 'buginium-z':
                             $key = $key . '--bag';
@@ -302,11 +304,11 @@
                             break;
                         case 'waterium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'aloraichium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'decidium-z':
                             $key = $key . '--bag';
@@ -318,31 +320,31 @@
 
                         case 'incinium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'kommonium-z':
                             $key = $key . '--bag';
                             break;
-                            
+
                         case 'lunalium-z':
                             $key = $key . '--bag';
                             break;
 
                         case 'lycanium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'marshadium-z':
                             $key = $key . '--bag';
                             break;
-                            
+
                         case 'mewnium-z':
                             $key = $key . '--bag';
                             break;
 
                         case 'mimikium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'pikanium-z':
                             $key = $key . '--bag';
@@ -354,19 +356,19 @@
 
                         case 'primarium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'snorlium-z':
                             $key = $key . '--bag';
                             break;
-                            
+
                         case 'solganium-z':
                             $key = $key . '--bag';
                             break;
 
                         case 'tapunium-z':
                             $key = $key . '--bag';
-                            break;    
+                            break;
 
                         case 'ultranecrozium-z':
                             $key = $key . '--bag';
@@ -404,11 +406,11 @@
 
         </div>
     </div>
-    <script src="scripts/pokemon.js"></script>
+  <script src="./scripts/pokemon.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <script src="./scripts/graph.js"></script>
-  
+
 
   <script>
     new fullpage('#fullPage', {
