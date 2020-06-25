@@ -157,7 +157,7 @@
     new fullpage('#fullPage', {
       autoScrolling: true,
       navigation: true,
-      navigationTooltips: ["Home", "Top 10", "About"],
+      navigationTooltips: ["Home", "Top 3", "About"],
       showActiveTooltip: false
     })
   </script>
